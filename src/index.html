@@ -1,0 +1,1663 @@
+<!DOCTYPE html>
+<html class="h-full" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>RAINTECH</title>
+		<link rel="stylesheet" href="./css/output.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
+	</head>
+
+	<body class="relative h-full">
+		<div class="wrapper flex min-h-full flex-col">
+			<div id="overlay" class="overlay duration-300"></div>
+			<!-- Header -->
+			<header>
+				<div class="container">
+					<div
+						class="flex items-center justify-between py-10 sm:justify-center sm:py-5"
+					>
+						<a href=" #" class="z-20 flex">
+							<img src="./img/logo.svg" alt="logo" />
+						</a>
+						<!-- Desktop menu -->
+						<ul
+							id="menu"
+							class="z-10 flex animate-fadeIn items-center gap-10 md:hidden"
+						>
+							<!-- Menu Item -->
+							<li>
+								<a
+									class="relative font-medium after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:scale-0 after:bg-main-black after:transition-all hover:after:scale-100"
+									href="#"
+								>
+									<span>Services</span>
+								</a>
+							</li>
+							<!-- Menu Item -->
+							<li>
+								<a
+									class="relative font-medium after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:scale-0 after:bg-main-black after:transition-all hover:after:scale-100"
+									href="#"
+								>
+									<span>Blog</span>
+								</a>
+							</li>
+							<!-- Menu Item -->
+							<li>
+								<a
+									class="relative font-medium after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:scale-0 after:bg-main-black after:transition-all hover:after:scale-100"
+									href="#"
+								>
+									<span>Pricing</span>
+								</a>
+							</li>
+							<!-- Menu Item -->
+							<li>
+								<a
+									class="relative font-medium after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:scale-0 after:bg-main-black after:transition-all hover:after:scale-100"
+									href="#"
+								>
+									<span>About</span>
+								</a>
+							</li>
+						</ul>
+
+						<!-- Header actions -->
+						<ul class="flex items-center gap-6 md:ml-auto md:mr-6 sm:hidden">
+							<li>
+								<a
+									class="relative font-medium after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:scale-0 after:bg-main-black after:transition-all hover:after:scale-100"
+									href="#"
+								>
+									Apply as Developer
+								</a>
+							</li>
+							<li>
+								<a
+									class="rounded-full border border-main-shadow py-[10px] px-9 font-medium leading-none transition-colors hover:border-main-black hover:bg-main-black hover:text-white"
+									href="#"
+								>
+									Contact Us
+								</a>
+							</li>
+						</ul>
+
+						<!-- Mobile menu -->
+						<ul
+							id="mobile-menu"
+							class="fixed -left-full right-0 top-0 bottom-0 z-20 flex h-screen w-[90%] flex-col items-center gap-[30px] overflow-auto bg-white pt-[60px] transition-all duration-300"
+						>
+							<li class="absolute right-10 top-10 sm:top-5 sm:right-5">
+								<button id="close-menu">
+									<img src="./img/burger-close.svg" alt="img" />
+								</button>
+							</li>
+							<li>
+								<a href="#" class="text-xl font-medium">Home</a>
+							</li>
+
+							<li>
+								<a href="#" class="text-xl font-medium">About Us</a>
+							</li>
+							<li>
+								<a href="#" class="text-xl font-medium">Features</a>
+							</li>
+							<li>
+								<a href="#" class="text-xl font-medium">Solution</a>
+							</li>
+
+							<li class="mt-[70px] hidden sm:block">
+								<a class="text-xl font-medium" href="#">Apply as Developer</a>
+							</li>
+							<li class="hidden sm:block">
+								<a
+									class="rounded-full border border-main-shadow py-[10px] px-9 text-xl font-medium leading-none transition-colors"
+									href="#"
+								>
+									Contact Us
+								</a>
+							</li>
+						</ul>
+
+						<!-- Burger Button -->
+						<button
+							id="burger"
+							aria-label="burger-button"
+							class="z-10 hidden md:block sm:absolute sm:left-5"
+						>
+							<img src="./img/burger-open.svg" alt="icon" />
+						</button>
+					</div>
+				</div>
+			</header>
+
+			<!-- Main Content -->
+			<main class="flex-auto">
+				<!-- Section 1 (Hero) -->
+				<section class="my-0">
+					<div class="container">
+						<div
+							class="relative grid grid-cols-2 items-center gap-2 md:grid-cols-1"
+						>
+							<div
+								class="max-w-[473px] md:mt-[10px] md:max-w-full sm:mt-[50px]"
+							>
+								<h2 class="max-w-[378px] pl-0 md:max-w-full md:text-center">
+									Developers as a Service
+								</h2>
+								<p class="mt-9 md:text-center">
+									A new way to build high-performance dev teams. Recruiting, HR,
+									legal and payroll included.
+								</p>
+								<a
+									class="btn mt-11 md:mx-auto md:flex md:justify-center sm:mt-[30px]"
+									href="#"
+								>
+									Get in Touch
+								</a>
+							</div>
+
+							<!-- Right Side -->
+							<div class="grid grid-cols-2 gap-[10px]">
+								<!-- Box Item 1 -->
+								<div
+									id="hero-box-1"
+									class="hero-box group z-20 mt-[130px] origin-bottom-right bg-hero-gradient-blue"
+								>
+									<!-- Bg Image -->
+									<img
+										class="absolute left-[102px] top-0 z-0 group-[.active]:hidden"
+										src="./img/hero-img-1.svg"
+										alt="img"
+									/>
+									<!-- Content -->
+									<div class="z-[1]">
+										<svg
+											width="17"
+											class="transition-all group-hover:translate-x-2 group-hover:-translate-y-2 group-[.active]:hidden"
+											height="17"
+											viewBox="0 0 17 17"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M17 2C17 1.17157 16.3284 0.5 15.5 0.5H2C1.17157 0.5 0.5 1.17157 0.5 2C0.5 2.82843 1.17157 3.5 2 3.5H14V15.5C14 16.3284 14.6716 17 15.5 17C16.3284 17 17 16.3284 17 15.5V2ZM3.06066 16.5607L16.5607 3.06066L14.4393 0.93934L0.93934 14.4393L3.06066 16.5607Z"
+												fill="white"
+											/>
+										</svg>
+										<span
+											class="mt-3 block text-[64px] font-bold leading-none text-white group-[.active]:mt-0"
+										>
+											3x
+										</span>
+										<p
+											class="mt-5 text-2xl font-medium leading-none text-white group-[.active]:hidden"
+										>
+											Reduce your involvement's time
+										</p>
+									</div>
+
+									<!-- Hidden Content -->
+									<div
+										class="hidden origin-bottom flex-col gap-5 group-[.active]:flex"
+									>
+										<p
+											class="mt-5 text-2xl font-medium leading-none text-white"
+										>
+											We save your involvement time on hiring and ongoing
+											administration processes
+										</p>
+										<p class="font-bold text-white">
+											Instead of sourcing and vetting hundreds of candidates, we
+											introduce you to 2-3 manually selected.
+										</p>
+										<p class="font-bold text-white">
+											You talk to motivated candidates.
+										</p>
+										<p class="font-bold text-white">
+											Your specific requirements are the most critical input for
+											us to choose candidates.
+										</p>
+										<p class="font-bold text-white">
+											After the hire, we take care of payroll, HR and legal. You
+											can focus on tech excellence.
+										</p>
+									</div>
+								</div>
+
+								<!-- Box Item 2 -->
+								<div class="hero-box group bg-hero-gradient-shadow">
+									<!-- Bg Image -->
+									<img
+										class="absolute left-[73px] top-0 z-0"
+										src="./img/hero-img-2.svg"
+										alt="img"
+									/>
+									<!-- Content -->
+									<div class="z-[1]">
+										<svg
+											class="transition-all group-hover:translate-x-2 group-hover:-translate-y-2"
+											width="17"
+											height="17"
+											viewBox="0 0 17 17"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M17 2C17 1.17157 16.3284 0.5 15.5 0.5H2C1.17157 0.5 0.5 1.17157 0.5 2C0.5 2.82843 1.17157 3.5 2 3.5H14V15.5C14 16.3284 14.6716 17 15.5 17C16.3284 17 17 16.3284 17 15.5V2ZM3.06066 16.5607L16.5607 3.06066L14.4393 0.93934L0.93934 14.4393L3.06066 16.5607Z"
+												fill="#000655"
+											/>
+										</svg>
+
+										<span class="mt-3 block text-[64px] font-bold leading-none">
+											2x
+										</span>
+										<p class="mt-5 text-2xl font-medium leading-none">
+											Job tenure duration
+										</p>
+									</div>
+								</div>
+
+								<!-- Box Item 3 -->
+								<div class="hero-box group bg-hero-gradient-black">
+									<!-- Bg Image -->
+									<img
+										class="absolute left-0 top-[60px] z-0"
+										src="./img/hero-img-3.svg"
+										alt="img"
+									/>
+									<!-- Content -->
+									<div class="z-[1]">
+										<svg
+											width="17"
+											class="transition-all group-hover:translate-x-2 group-hover:-translate-y-2"
+											height="17"
+											viewBox="0 0 17 17"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M17 2C17 1.17157 16.3284 0.5 15.5 0.5H2C1.17157 0.5 0.5 1.17157 0.5 2C0.5 2.82843 1.17157 3.5 2 3.5H14V15.5C14 16.3284 14.6716 17 15.5 17C16.3284 17 17 16.3284 17 15.5V2ZM3.06066 16.5607L16.5607 3.06066L14.4393 0.93934L0.93934 14.4393L3.06066 16.5607Z"
+												fill="white"
+											/>
+										</svg>
+										<span
+											class="mt-3 block text-[64px] font-bold leading-none text-white"
+										>
+											2x
+										</span>
+										<p
+											class="mt-5 text-2xl font-medium leading-none text-white"
+										>
+											Reduce your time-to-hire
+										</p>
+									</div>
+								</div>
+
+								<!-- Box Item 4 -->
+								<div
+									class="hero-box group mt-[-130px] bg-hero-gradient-lightgray"
+								>
+									<!-- Bg Image -->
+									<img
+										class="absolute left-[57px] top-3 z-0"
+										src="./img/hero-img-4.svg"
+										alt="img"
+									/>
+									<!-- Content -->
+									<div class="z-[1]">
+										<svg
+											class="transition-all group-hover:translate-x-2 group-hover:-translate-y-2"
+											width="17"
+											height="17"
+											viewBox="0 0 17 17"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M17 2C17 1.17157 16.3284 0.5 15.5 0.5H2C1.17157 0.5 0.5 1.17157 0.5 2C0.5 2.82843 1.17157 3.5 2 3.5H14V15.5C14 16.3284 14.6716 17 15.5 17C16.3284 17 17 16.3284 17 15.5V2ZM3.06066 16.5607L16.5607 3.06066L14.4393 0.93934L0.93934 14.4393L3.06066 16.5607Z"
+												fill="#000655"
+											/>
+										</svg>
+
+										<span class="mt-3 block text-[64px] font-bold leading-none">
+											1.5х
+										</span>
+										<p class="mt-5 text-2xl font-medium leading-none">
+											Cost savings
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Section 2 ( Testimonials slider ) -->
+				<section>
+					<div class="container">
+						<!-- Slider main container -->
+						<div id="testimonials-slider" class="swiper">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper pb-[70px]">
+								<!-- Slides -->
+								<!-- SLide -->
+								<div class="swiper-slide !h-auto">
+									<div class="flex !h-full gap-4">
+										<div class="shrink-0">
+											<img src="./img/quotes.svg" alt="img" />
+										</div>
+										<div class="flex flex-col">
+											<p class="mb-5 text-2xl font-medium text-main-black">
+												The quality of the engineers they provide is
+												outstanding. I don’t know how they do it.
+											</p>
+
+											<div class="mt-auto">
+												<p
+													class="text-lg font-medium leading-tight text-main-shadow"
+												>
+													Jason Miller
+												</p>
+												<p
+													class="text-lg font-medium leading-tight text-main-shadow"
+												>
+													JavaScript Solutions Architect, CredSpark
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- SLide -->
+								<div class="swiper-slide !h-auto">
+									<div class="flex !h-full gap-4">
+										<div class="shrink-0">
+											<img src="./img/quotes.svg" alt="img" />
+										</div>
+										<div class="flex flex-col">
+											<p class="mb-5 text-2xl font-medium text-main-black">
+												The creativity they bring to each project is unmatched.
+												It's truly a wonder how they achieve.
+											</p>
+
+											<div class="mt-auto">
+												<p
+													class="text-lg font-medium leading-tight text-main-shadow"
+												>
+													Eleanor Hughes
+												</p>
+												<p
+													class="text-lg font-medium leading-tight text-main-shadow"
+												>
+													iOS Developer, TechSolution
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- SLide -->
+								<div class="swiper-slide !h-auto">
+									<div class="flex !h-full gap-4">
+										<div class="shrink-0">
+											<img src="./img/quotes.svg" alt="img" />
+										</div>
+										<div class="flex flex-col">
+											<p class="mb-5 text-2xl font-medium text-main-black">
+												Every code they present is breathtaking. Their secret to
+												such brilliance remains elusive.
+											</p>
+
+											<div class="mt-auto">
+												<p
+													class="text-lg font-medium leading-tight text-main-shadow"
+												>
+													Ingrid Johansen
+												</p>
+												<p
+													class="text-lg font-medium leading-tight text-main-shadow"
+												>
+													Full Stack Developer, BrainSoft
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- SLide -->
+								<div class="swiper-slide !h-auto">
+									<div class="flex !h-full gap-4">
+										<div class="shrink-0">
+											<img src="./img/quotes.svg" alt="img" />
+										</div>
+										<div class="flex flex-col">
+											<p class="mb-5 text-2xl font-medium text-main-black">
+												The quality of the engineers they provide is
+												outstanding. I don’t know how they do it.
+											</p>
+
+											<div class="mt-auto">
+												<p
+													class="text-lg font-medium leading-tight text-main-shadow"
+												>
+													Jason Miller
+												</p>
+												<p
+													class="text-lg font-medium leading-tight text-main-shadow"
+												>
+													JavaScript Solutions Architect, CredSpark
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- If we need pagination -->
+							<div class="swiper-pagination"></div>
+						</div>
+						<!-- [END] Base HTML Layout Swiper  -->
+					</div>
+				</section>
+
+				<!-- Section 3 ( Approach ) -->
+				<section>
+					<div class="container">
+						<h2>Our Approach</h2>
+
+						<div
+							class="mt-[60px] grid grid-cols-3 gap-[10px] md:grid-cols-1 sm:mt-[50px]"
+						>
+							<div
+								class="flex flex-col gap-[60px] rounded-[20px] bg-main-blue p-[60px] sm:gap-10 sm:p-10 xs:p-5"
+							>
+								<h3 class="text-white">Transparency</h3>
+								<img
+									class="max-h-[150px] xs:max-h-[100px]"
+									src="./img/approach-1.svg"
+									alt="icon"
+								/>
+								<p
+									class="mt-auto text-xl font-medium text-white md:text-2xl sm:text-lg"
+								>
+									Reintech ensures a fair salary negotiation process, helping
+									you trust your developers from the very beginning.
+								</p>
+							</div>
+
+							<div
+								class="flex flex-col gap-[60px] rounded-[20px] bg-main-green p-[60px] sm:gap-10 sm:p-10 xs:p-5"
+							>
+								<h3 class="text-white">Efficiency</h3>
+								<img
+									class="max-h-[150px] xs:max-h-[100px]"
+									src="./img/approach-2.svg"
+									alt="icon"
+								/>
+								<p
+									class="mt-auto text-xl font-medium text-white md:text-2xl sm:text-lg"
+								>
+									Reintech employs innovative approaches and technologies to
+									ensure the speed and quality of our work.
+								</p>
+							</div>
+
+							<div
+								class="flex flex-col gap-[60px] rounded-[20px] bg-[#D3DDE9] p-[60px] sm:gap-10 sm:p-10 xs:p-5"
+							>
+								<h3>Personalization</h3>
+								<img
+									class="max-h-[150px] xs:max-h-[100px]"
+									src="./img/approach-3.svg"
+									alt="icon"
+								/>
+								<p
+									class="mt-auto text-xl font-medium text-main-black md:text-2xl sm:text-lg"
+								>
+									Reintech tailors its services to the specifics of your
+									business, taking into account unique needs and expectations.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Section 4 (Customers) -->
+				<section class="relative">
+					<div class="container">
+						<h2 class="max-w-[765px]">
+							What our customers are looking for from us
+						</h2>
+
+						<div
+							class="mt-[127px] flex max-w-[686px] flex-wrap gap-[10px] md:mx-auto sm:mt-[50px] sm:max-w-full sm:flex-col"
+						>
+							<div
+								class="flex h-[245px] w-full max-w-[338px] items-center justify-center rounded-[20px] bg-main-black p-10 text-center md:order-1 sm:mt-0 sm:h-[145px] sm:max-w-full"
+							>
+								<h3 class="leading-tight text-white sm:text-2xl">
+									Scale tech team with remote developers
+								</h3>
+							</div>
+							<div
+								class="mt-[111px] flex h-[245px] w-full max-w-[338px] items-center justify-center rounded-[20px] bg-[rgba(209,220,232,0.60)] p-10 text-center backdrop-blur-[50px] md:order-3 md:mt-0 sm:mt-0 sm:h-[145px] sm:max-w-full"
+							>
+								<h3 class="leading-tight sm:text-2xl">Reduce costs</h3>
+							</div>
+							<div
+								class="-mt-[111px] flex h-[245px] w-full max-w-[338px] items-center justify-center rounded-[20px] bg-main-blue p-10 text-center md:order-2 sm:-mt-0 sm:h-[145px] sm:max-w-full"
+							>
+								<h3 class="leading-tight text-white sm:text-2xl">
+									Quick fill a specific role
+								</h3>
+							</div>
+							<div
+								class="flex h-[245px] max-w-[338px] items-center justify-center rounded-[20px] bg-[rgba(209,220,232,0.60)] p-10 text-center backdrop-blur-[50px] md:order-4 md:-mt-[111px] sm:mt-0 sm:h-[145px] sm:max-w-full"
+							>
+								<h3 class="leading-tight sm:text-2xl">
+									Manage their contractors payroll
+								</h3>
+							</div>
+						</div>
+					</div>
+
+					<img
+						class="absolute right-0 top-[179px] z-[-1] rounded-tl-[20px] rounded-bl-[20px] md:static md:-mt-[160px] md:h-auto md:w-full md:max-w-full md:rounded-none sm:mt-[-75px]"
+						src="./img/customers-image.png"
+						alt="img"
+					/>
+				</section>
+
+				<!-- Section 5 ( Talents ) -->
+				<section>
+					<div class="container">
+						<h2>Talents</h2>
+
+						<div
+							class="mt-[60px] grid grid-cols-3 gap-[10px] sm:mt-[50px] sm:grid-cols-1"
+						>
+							<div
+								class="flex flex-col items-center justify-center gap-[30px] rounded-[20px] bg-blue-shadow p-[60px] md:bg-transparent md:p-0 sm:bg-blue-shadow sm:p-10"
+							>
+								<svg
+									width="64"
+									height="64"
+									viewBox="0 0 64 64"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M41.4737 41L44 57L32 52.2L20 57L22.5263 41"
+										fill="#FFC700"
+									/>
+									<path
+										d="M32 42C43.0457 42 52 33.0457 52 22C52 10.9543 43.0457 2 32 2C20.9543 2 12 10.9543 12 22C12 33.0457 20.9543 42 32 42Z"
+										fill="#FFC700"
+										stroke="#F5F8FB"
+										stroke-width="3"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+								<p class="text-center text-2xl font-medium text-main-black">
+									Verified
+									<br />
+									Experience
+								</p>
+							</div>
+
+							<div
+								class="flex flex-col items-center justify-center gap-[30px] rounded-[20px] bg-blue-shadow p-[60px] md:bg-transparent md:p-0 sm:bg-blue-shadow sm:p-10"
+							>
+								<svg
+									width="64"
+									height="64"
+									viewBox="0 0 64 64"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M5 9C5 7.89543 5.89543 7 7 7H57C58.1046 7 59 7.89543 59 9V41.7779C59 42.8825 58.1046 43.7779 57 43.7779H19.0631C18.5331 43.7779 18.0246 43.9884 17.6496 44.363L8.41351 53.5899C7.15329 54.8489 5 53.9563 5 52.175V43.7779V9Z"
+										fill="#2F6EF6"
+									/>
+									<circle cx="22" cy="25.8672" r="3" fill="white" />
+									<circle cx="33" cy="25.8672" r="3" fill="white" />
+									<circle cx="44" cy="25.8672" r="3" fill="white" />
+								</svg>
+
+								<p class="text-center text-2xl font-medium text-main-black">
+									Verified
+									<br />
+									Spoken English
+								</p>
+							</div>
+
+							<div
+								class="flex flex-col items-center justify-center gap-[30px] rounded-[20px] bg-blue-shadow p-[60px] md:bg-transparent md:p-0 sm:bg-blue-shadow sm:p-10"
+							>
+								<svg
+									width="64"
+									height="64"
+									viewBox="0 0 64 64"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M53.3346 32C53.3346 45.0891 39.0574 54.609 33.8626 57.6396L32.0075 58.6426L30.14 57.6396C24.9452 54.609 10.668 45.0891 10.668 32V19.2469C10.668 17.1149 10.668 16.0489 11.0167 15.1325C11.3247 14.323 11.8253 13.6007 12.4751 13.028C13.2106 12.3798 14.2088 12.0055 16.205 11.2569L16.205 11.2569L30.5032 5.89509L32.0013 5.31982L33.4994 5.89509L47.7976 11.2569C49.7938 12.0055 50.792 12.3798 51.5275 13.028C52.1773 13.6007 52.6779 14.323 52.9859 15.1325C53.3346 16.0489 53.3346 17.1149 53.3346 19.2469V32Z"
+										fill="#5DC36D"
+									/>
+									<path
+										d="M24 30.6667L29.3333 36L41.3333 24"
+										stroke="white"
+										stroke-width="3"
+										stroke-linejoin="round"
+									/>
+								</svg>
+
+								<p class="text-center text-2xl font-medium text-main-black">
+									Verified Soft-Skills
+									<br />
+									for Remote Work
+								</p>
+							</div>
+						</div>
+
+						<div
+							class="mx-auto mt-28 flex max-w-[566px] flex-col gap-4 md:mt-[90px] sm:mt-[60px] sm:max-w-full"
+						>
+							<h3 class="text-center">Mature and Autonomous</h3>
+							<p class="text-center text-xl">
+								Employee autonomy frees up a lot of management time and
+								attention to solve really important business problems.
+							</p>
+							<a
+								class="text-center text-xl font-medium text-main-blue underline-offset-4 transition-all hover:underline"
+								href="#"
+								target="_blank"
+							>
+								Learn more
+							</a>
+						</div>
+					</div>
+				</section>
+
+				<!-- Section 6 ( Talents Slider ) -->
+				<section class="!overflow-hidden">
+					<div class="container relative">
+						<h2 class="max-w-[345px]">Talent’s Experience</h2>
+
+						<div
+							class="mt-[60px] translate-x-[157px] !overflow-hidden sm:translate-x-0 sm:pb-[77px]"
+						>
+							<!-- Slider main container -->
+							<div id="talents-slider" class="swiper !overflow-visible">
+								<!-- Additional required wrapper -->
+								<div class="swiper-wrapper pb-12 sm:pb-20">
+									<!-- Slides -->
+									<!-- Slide -->
+									<div class="swiper-slide !h-auto">
+										<div
+											class="flex h-full flex-col rounded-[20px] border border-[#CCCDDD] p-[55px] sm:border-none sm:p-0"
+										>
+											<img
+												class="max-w-[50px]"
+												src="./img/quotes.svg"
+												alt="img"
+											/>
+											<h3 class="mt-5">
+												Reintech gives me both
+												<span class="text-main-blue">
+													organizational and financial freedom
+												</span>
+												, and I am better for it.
+											</h3>
+
+											<div class="mt-auto flex gap-5 pt-2">
+												<div
+													class="h-[70px] w-[70px] shrink-0 overflow-hidden rounded-full"
+												>
+													<img
+														class="h-auto w-full max-w-full"
+														src="./img/avatar-1.png"
+														alt="avatar"
+													/>
+												</div>
+												<div>
+													<p
+														class="text-lg font-medium leading-tight text-main-shadow"
+													>
+														Vitalii
+													</p>
+													<p
+														class="text-lg font-medium leading-tight text-main-shadow"
+													>
+														JavaScript Solutions Architect
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Slide -->
+									<div class="swiper-slide !h-auto">
+										<div
+											class="flex h-full flex-col rounded-[20px] border border-[#CCCDDD] p-[55px] sm:border-none sm:p-0"
+										>
+											<img
+												class="max-w-[50px]"
+												src="./img/quotes.svg"
+												alt="img"
+											/>
+											<h3 class="mt-5">
+												The
+												<span class="text-main-blue">creativity</span>
+												they bring to each project is unmatched. It's
+												<span class="text-main-blue">truly a wonder</span>
+												how they achieve.
+											</h3>
+
+											<div class="mt-auto flex gap-5 pt-2">
+												<div
+													class="h-[70px] w-[70px] shrink-0 overflow-hidden rounded-full"
+												>
+													<img
+														class="h-auto w-full max-w-full"
+														src="./img/avatar-2.png"
+														alt="avatar"
+													/>
+												</div>
+												<div>
+													<p
+														class="text-lg font-medium leading-tight text-main-shadow"
+													>
+														Andrew
+													</p>
+													<p
+														class="text-lg font-medium leading-tight text-main-shadow"
+													>
+														iOS Developer
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Slide -->
+									<div class="swiper-slide !h-auto">
+										<div
+											class="flex h-full flex-col rounded-[20px] border border-[#CCCDDD] p-[55px] sm:border-none sm:p-0"
+										>
+											<img
+												class="max-w-[50px]"
+												src="./img/quotes.svg"
+												alt="img"
+											/>
+											<h3 class="mt-5">
+												Every code they present is breathtaking. Their secret to
+												such
+												<span class="text-main-blue">brilliance remains</span>
+												elusive.
+											</h3>
+
+											<div class="mt-auto flex gap-5 pt-2">
+												<div
+													class="h-[70px] w-[70px] shrink-0 overflow-hidden rounded-full"
+												>
+													<img
+														class="h-auto w-full max-w-full"
+														src="./img/avatar-3.png"
+														alt="avatar"
+													/>
+												</div>
+												<div>
+													<p
+														class="text-lg font-medium leading-tight text-main-shadow"
+													>
+														Nick
+													</p>
+													<p
+														class="text-lg font-medium leading-tight text-main-shadow"
+													>
+														Solutions Arc
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Slide -->
+									<div class="swiper-slide !h-auto">
+										<div
+											class="flex h-full flex-col rounded-[20px] border border-[#CCCDDD] p-[55px] sm:border-none sm:p-0"
+										>
+											<img
+												class="max-w-[50px]"
+												src="./img/quotes.svg"
+												alt="img"
+											/>
+											<h3 class="mt-5">
+												Reintech gives me both
+												<span class="text-main-blue">
+													organizational and financial freedom
+												</span>
+												, and I am better for it.
+											</h3>
+
+											<div class="mt-auto flex gap-5 pt-2">
+												<div
+													class="h-[70px] w-[70px] shrink-0 overflow-hidden rounded-full"
+												>
+													<img
+														class="h-auto w-full max-w-full"
+														src="./img/avatar-1.png"
+														alt="avatar"
+													/>
+												</div>
+												<div>
+													<p
+														class="text-lg font-medium leading-tight text-main-shadow"
+													>
+														Vitalii
+													</p>
+													<p
+														class="text-lg font-medium leading-tight text-main-shadow"
+													>
+														JavaScript Solutions Architect
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Slide -->
+									<div class="swiper-slide !h-auto">
+										<div
+											class="flex h-full flex-col rounded-[20px] border border-[#CCCDDD] p-[55px] sm:border-none sm:p-0"
+										>
+											<img
+												class="max-w-[50px]"
+												src="./img/quotes.svg"
+												alt="img"
+											/>
+											<h3 class="mt-5">
+												The
+												<span class="text-main-blue">creativity</span>
+												they bring to each project is unmatched. It's
+												<span class="text-main-blue">truly a wonder</span>
+												how they achieve.
+											</h3>
+
+											<div class="mt-auto flex gap-5 pt-2">
+												<div
+													class="h-[70px] w-[70px] shrink-0 overflow-hidden rounded-full"
+												>
+													<img
+														class="h-auto w-full max-w-full"
+														src="./img/avatar-2.png"
+														alt="avatar"
+													/>
+												</div>
+												<div>
+													<p
+														class="text-lg font-medium leading-tight text-main-shadow"
+													>
+														Andrew
+													</p>
+													<p
+														class="text-lg font-medium leading-tight text-main-shadow"
+													>
+														iOS Developer
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- If we need pagination -->
+								<div class="swiper-pagination hidden sm:block"></div>
+							</div>
+							<!-- [END] Base HTML Layout Swiper  -->
+						</div>
+
+						<!-- If we need navigation buttons -->
+						<div
+							class="swiper-prev absolute left-[70px] bottom-[230px] sm:hidden"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="66"
+								height="64"
+								viewBox="0 0 66 64"
+								fill="none"
+							>
+								<path
+									opacity="0.2"
+									d="M33 1L2 32M2 32L33 63M2 32H65.5"
+									stroke="#000655"
+									stroke-width="2"
+								/>
+							</svg>
+						</div>
+					</div>
+				</section>
+
+				<!-- Section 7 ( Roles ) -->
+				<section class="sm:mt-[-100px]">
+					<div class="container">
+						<h2 class="mb-[60px]">Roles</h2>
+					</div>
+
+					<!-- RTL -->
+					<div class="marquee border-t border-t-[#CCCDDD] py-5">
+						<ul class="marquee__content marquee__content-left">
+							<li
+								class="text-center text-[40px] font-medium leading-none text-main-blue sm:text-xl"
+							>
+								Software engineers
+							</li>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-[#D3DDE9] sm:text-xl"
+							>
+								DevOps
+							</li>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-main-black sm:text-xl"
+							>
+								Full Stack Javascript Engineer
+							</li>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-main-blue sm:text-xl"
+							>
+								QA Engineer
+							</li>
+						</ul>
+						<!-- Mirrors the content above -->
+						<ul
+							class="marquee__content marquee__content-left"
+							aria-hidden="true"
+						>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-main-blue sm:text-xl"
+							>
+								Software engineers
+							</li>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-[#D3DDE9] sm:text-xl"
+							>
+								DevOps
+							</li>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-main-black sm:text-xl"
+							>
+								Full Stack Javascript Engineer
+							</li>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-main-blue sm:text-xl"
+							>
+								QA Engineer
+							</li>
+						</ul>
+					</div>
+
+					<!-- LTR -->
+					<div class="marquee border-t border-t-[#CCCDDD] py-5">
+						<ul class="marquee__content marquee__content-right">
+							<li
+								class="text-center text-[40px] font-medium leading-none text-main-blue sm:text-xl"
+							>
+								Software Developer
+							</li>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-[#D3DDE9] sm:text-xl"
+							>
+								Front End Software Engineer
+							</li>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-main-black sm:text-xl"
+							>
+								Web3 dApps
+							</li>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-main-blue sm:text-xl"
+							>
+								QA Engineer
+							</li>
+						</ul>
+						<!-- Mirrors the content above -->
+						<ul
+							class="marquee__content marquee__content-right"
+							aria-hidden="true"
+						>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-main-blue sm:text-xl"
+							>
+								Software Developer
+							</li>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-[#D3DDE9] sm:text-xl"
+							>
+								Front End Software Engineer
+							</li>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-main-black sm:text-xl"
+							>
+								Web3 dApps
+							</li>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-main-blue sm:text-xl"
+							>
+								QA Engineer
+							</li>
+						</ul>
+					</div>
+
+					<!-- RTL -->
+					<div class="marquee border-t border-t-[#CCCDDD] py-5">
+						<ul class="marquee__content marquee__content-left">
+							<li
+								class="text-center text-[40px] font-medium leading-none text-main-blue sm:text-xl"
+							>
+								Full Stack Javascript Engineer
+							</li>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-[#D3DDE9] sm:text-xl"
+							>
+								DevOps
+							</li>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-main-black sm:text-xl"
+							>
+								Full stack PHP developer
+							</li>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-main-blue sm:text-xl"
+							>
+								Senior DevOps Engineer
+							</li>
+						</ul>
+						<!-- Mirrors the content above -->
+						<ul
+							class="marquee__content marquee__content-left"
+							aria-hidden="true"
+						>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-main-blue sm:text-xl"
+							>
+								Full Stack Javascript Engineer
+							</li>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-[#D3DDE9] sm:text-xl"
+							>
+								DevOps
+							</li>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-main-black sm:text-xl"
+							>
+								Full stack PHP developer
+							</li>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-main-blue sm:text-xl"
+							>
+								Senior DevOps Engineer
+							</li>
+						</ul>
+					</div>
+
+					<!-- LTR -->
+					<div
+						class="marquee border-t border-b border-t-[#CCCDDD] border-b-[#CCCDDD] py-5"
+					>
+						<ul class="marquee__content marquee__content-right">
+							<li
+								class="text-center text-[40px] font-medium leading-none text-main-blue sm:text-xl"
+							>
+								Software engineers
+							</li>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-[#D3DDE9] sm:text-xl"
+							>
+								Tech Lead (.Net) Developer
+							</li>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-main-black sm:text-xl"
+							>
+								Senior Frontend
+							</li>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-main-blue sm:text-xl"
+							>
+								QA Engineer
+							</li>
+						</ul>
+						<!-- Mirrors the content above -->
+						<ul
+							class="marquee__content marquee__content-right"
+							aria-hidden="true"
+						>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-[#D3DDE9] sm:text-xl"
+							>
+								Tech Lead (.Net) Developer
+							</li>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-main-blue sm:text-xl"
+							>
+								Software engineers
+							</li>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-main-black sm:text-xl"
+							>
+								Senior Frontend
+							</li>
+							<li
+								class="text-center text-[40px] font-medium leading-none text-main-blue sm:text-xl"
+							>
+								QA Engineer
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- Section 8 ( What we do ) -->
+				<section>
+					<div class="container">
+						<h2>Wat we do?</h2>
+						<div
+							class="mt-[60px] flex flex-wrap gap-[10px] lg:grid lg:grid-cols-2 md:grid-cols-1"
+						>
+							<div
+								class="flex max-w-[582px] items-center gap-10 rounded-[20px] bg-main-blue p-[60px] lg:max-w-full sm:flex-col sm:justify-center sm:px-10"
+							>
+								<div><img src="./img/what-we-do-1.svg" alt="img" /></div>
+								<div class="flex max-w-[250px] flex-col gap-6">
+									<h3 class="text-white sm:text-center">Recruiting</h3>
+									<p
+										class="text-xl font-medium leading-tight text-white sm:text-center"
+									>
+										Access preselected mature talents
+									</p>
+								</div>
+							</div>
+
+							<div
+								class="flex max-w-[582px] items-center gap-10 rounded-[20px] bg-main-black p-[60px] lg:max-w-full sm:flex-col sm:justify-center sm:px-10"
+							>
+								<div><img src="./img/what-we-do-2.svg" alt="img" /></div>
+								<div class="flex max-w-[250px] flex-col gap-6">
+									<h3 class="text-white sm:text-center">
+										Contracts management
+									</h3>
+									<p
+										class="text-xl font-medium leading-tight text-white sm:text-center"
+									>
+										One agreement
+									</p>
+								</div>
+							</div>
+
+							<div
+								class="ml-[146px] flex max-w-[582px] items-center gap-10 rounded-[20px] bg-[#D3DDE9] p-[60px] lg:ml-0 lg:max-w-full sm:flex-col sm:justify-center sm:px-10"
+							>
+								<div><img src="./img/what-we-do-3.svg" alt="img" /></div>
+								<div class="flex max-w-[250px] flex-col gap-6">
+									<h3 class="sm:text-center">Payroll management</h3>
+									<p class="text-xl font-medium leading-tight sm:text-center">
+										One invoice per entire team
+									</p>
+								</div>
+							</div>
+
+							<div
+								class="flex max-w-[582px] items-center gap-10 rounded-[20px] bg-blue-shadow p-[60px] lg:max-w-full sm:flex-col sm:justify-center sm:px-10"
+							>
+								<div><img src="./img/what-we-do-4.svg" alt="img" /></div>
+								<div class="flex max-w-[250px] flex-col gap-6">
+									<h3 class="sm:text-center">Talent management</h3>
+									<p class="text-xl font-medium leading-tight sm:text-center">
+										Feedback sharing, coaching, terminations
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Section 9 ( Partners ) -->
+				<section
+					class="bg-[url('../img/partners.jpg')] bg-cover bg-center bg-no-repeat py-20 md:py-[60px] sm:py-[50px]"
+				>
+					<div class="container">
+						<h2 class="max-w-[816px] text-white">
+							100+ developers placed for over 20 customers
+						</h2>
+
+						<div
+							class="mx-auto mt-[180px] flex max-w-[1200px] flex-wrap justify-center gap-y-20 gap-x-[110px] md:mt-20 md:justify-start md:gap-x-[100px] md:gap-y-[30px] sm:mt-[70px] sm:gap-x-[55px]"
+						>
+							<div class="shrink-0 md:shrink">
+								<img src="./img/partner-1.png" alt="img" />
+							</div>
+							<div class="shrink-0 md:shrink">
+								<img src="./img/partner-2.png" alt="img" />
+							</div>
+							<div class="shrink-0 md:shrink">
+								<img src="./img/partner-3.png" alt="img" />
+							</div>
+							<div class="shrink-0 md:shrink">
+								<img src="./img/partner-4.png" alt="img" />
+							</div>
+							<div class="shrink-0 md:shrink">
+								<img src="./img/partner-5.png" alt="img" />
+							</div>
+							<div class="shrink-0 md:shrink">
+								<img src="./img/partner-6.png" alt="img" />
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Section 10 ( FAQ )  -->
+				<section>
+					<div class="container">
+						<h2>FAQ</h2>
+
+						<!-- [START] HTML Accordion -->
+						<div class="mt-6 grid">
+							<!-- Accrodion Item -->
+							<div
+								class="accordion-item group flex cursor-pointer flex-col border-b border-b-[#CCCDDD]"
+							>
+								<!-- Accrodion Trigger -->
+								<div
+									class="accordion-trigger flex w-full items-center justify-between p-8 sm:px-0"
+								>
+									<span class="text-2xl font-medium">
+										What hourly rate I can claim?
+									</span>
+									<!-- Icon -->
+									<div class="flex">
+										<!-- Plus icon -->
+										<div class="w-3">
+											<span
+												class="flex h-[2px] translate-y-[2px] rotate-90 bg-main-blue transition-transform group-[.active]:rotate-0"
+											></span>
+											<span class="flex h-[2px] bg-main-blue"></span>
+										</div>
+									</div>
+								</div>
+
+								<!-- Accrodion Content -->
+								<div
+									class="accordion-content -mt-4 hidden px-8 pb-8 text-lg sm:px-0"
+								>
+									No, you don’t. There is no need inquitting your current job.
+									Creating a profile does not require anything like that. You
+									are welcome to work at your current job while considering
+									interesting proposals for yourself. The system that we have
+									created is the one where customers fight for you.
+								</div>
+							</div>
+
+							<!-- Accrodion Item -->
+							<div
+								class="accordion-item group flex cursor-pointer flex-col border-b border-b-[#CCCDDD]"
+							>
+								<!-- Accrodion Trigger -->
+								<div
+									class="accordion-trigger flex w-full items-center justify-between p-8 sm:px-0"
+								>
+									<span class="text-2xl font-medium">
+										Do I need to quit my job to register on the platform?
+									</span>
+									<!-- Icon -->
+									<div class="flex">
+										<!-- Plus icon -->
+										<div class="w-3">
+											<span
+												class="flex h-[2px] translate-y-[2px] rotate-90 bg-main-blue transition-transform group-[.active]:rotate-0"
+											></span>
+											<span class="flex h-[2px] bg-main-blue"></span>
+										</div>
+									</div>
+								</div>
+
+								<!-- Accrodion Content -->
+								<div
+									class="accordion-content -mt-4 hidden px-8 pb-8 text-lg sm:px-0"
+								>
+									No, you don’t. There is no need inquitting your current job.
+									Creating a profile does not require anything like that. You
+									are welcome to work at your current job while considering
+									interesting proposals for yourself. The system that we have
+									created is the one where customers fight for you.
+								</div>
+							</div>
+
+							<!-- Accrodion Item -->
+							<div
+								class="accordion-item group flex cursor-pointer flex-col border-b border-b-[#CCCDDD]"
+							>
+								<!-- Accrodion Trigger -->
+								<div
+									class="accordion-trigger flex w-full items-center justify-between p-8 sm:px-0"
+								>
+									<span class="text-2xl font-medium">
+										Who has access to my profile?
+									</span>
+									<!-- Icon -->
+									<div class="flex">
+										<!-- Plus icon -->
+										<div class="w-3">
+											<span
+												class="flex h-[2px] translate-y-[2px] rotate-90 bg-main-blue transition-transform group-[.active]:rotate-0"
+											></span>
+											<span class="flex h-[2px] bg-main-blue"></span>
+										</div>
+									</div>
+								</div>
+
+								<!-- Accrodion Content -->
+								<div
+									class="accordion-content -mt-4 hidden px-8 pb-8 text-lg sm:px-0"
+								>
+									No, you don’t. There is no need inquitting your current job.
+									Creating a profile does not require anything like that. You
+									are welcome to work at your current job while considering
+									interesting proposals for yourself. The system that we have
+									created is the one where customers fight for you.
+								</div>
+							</div>
+
+							<!-- Accrodion Item -->
+							<div class="accordion-item group flex cursor-pointer flex-col">
+								<!-- Accrodion Trigger -->
+								<div
+									class="accordion-trigger flex w-full items-center justify-between p-8 sm:px-0"
+								>
+									<span class="text-2xl font-medium">
+										Do you provide office and equipment?
+									</span>
+									<!-- Icon -->
+									<div class="flex">
+										<!-- Plus icon -->
+										<div class="w-3">
+											<span
+												class="flex h-[2px] translate-y-[2px] rotate-90 bg-main-blue transition-transform group-[.active]:rotate-0"
+											></span>
+											<span class="flex h-[2px] bg-main-blue"></span>
+										</div>
+									</div>
+								</div>
+
+								<!-- Accrodion Content -->
+								<div
+									class="accordion-content -mt-4 hidden px-8 pb-8 text-lg sm:px-0"
+								>
+									No, you don’t. There is no need inquitting your current job.
+									Creating a profile does not require anything like that. You
+									are welcome to work at your current job while considering
+									interesting proposals for yourself. The system that we have
+									created is the one where customers fight for you.
+								</div>
+							</div>
+						</div>
+						<!-- [END] HTML Accordion -->
+					</div>
+				</section>
+
+				<!-- Section 11 ( Ask Question ) -->
+				<section class="md:bg-blue-shadow">
+					<div class="container">
+						<div
+							class="flex justify-between gap-[100px] rounded-[20px] bg-blue-shadow p-[60px] py-[70px] md:flex-col md:gap-[30px] md:px-5 sm:py-[50px]"
+						>
+							<div class="max-w-[462px]">
+								<h2 class="max-w-xs pl-0">Ask Question</h2>
+								<p class="mt-10 text-lg font-medium leading-tight">
+									If you have more questions or if you'd like to browse more
+									developer profiles, send us a message.
+								</p>
+								<a
+									class="mt-7 block text-lg font-medium text-main-blue underline-offset-4 hover:underline"
+									href="mailto:contact@reintech.io"
+								>
+									contact@reintech.io
+								</a>
+							</div>
+
+							<div class="w-full">
+								<form class="flex w-full flex-col gap-[10px]">
+									<input
+										class="input"
+										type="text"
+										id="name"
+										name="name"
+										placeholder="Your Name"
+									/>
+
+									<input
+										class="input"
+										type="email"
+										id="email"
+										name="email"
+										placeholder="Your Email"
+									/>
+
+									<label class="flex flex-col" for="textarea">
+										<span class="p-5 text-lg font-medium text-main-shadow">
+											Your Question
+										</span>
+										<textarea
+											class="input min-h-[140px] resize-none rounded-[10px] border border-[#CCCDDD] focus:border-main-blue md:max-w-full"
+											name="textarea"
+											id="textarea"
+										></textarea>
+									</label>
+
+									<button class="btn mt-5" type="submit">Send Question</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<!-- Footer -->
+			<footer class="py-[60px] sm:py-[50px]">
+				<div class="container">
+					<div
+						class="grid grid-cols-3 justify-between gap-10 sm:grid-cols-2 xs:grid-cols-1"
+					>
+						<!-- Footer logo -->
+						<a class="md:order-1" href="#">
+							<img src="./img/logo.svg" alt="img" />
+						</a>
+
+						<!-- Footer menu -->
+						<ul
+							id="menu"
+							class="z-10 flex animate-fadeIn items-center gap-10 md:order-2 md:gap-5 sm:order-3 sm:gap-4"
+						>
+							<!-- Menu Item -->
+							<li>
+								<a
+									class="relative font-medium after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:scale-0 after:bg-main-black after:transition-all hover:after:scale-100"
+									href="#"
+								>
+									<span>Services</span>
+								</a>
+							</li>
+							<!-- Menu Item -->
+							<li>
+								<a
+									class="relative font-medium after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:scale-0 after:bg-main-black after:transition-all hover:after:scale-100"
+									href="#"
+								>
+									<span>Blog</span>
+								</a>
+							</li>
+							<!-- Menu Item -->
+							<li>
+								<a
+									class="relative font-medium after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:scale-0 after:bg-main-black after:transition-all hover:after:scale-100"
+									href="#"
+								>
+									<span>Pricing</span>
+								</a>
+							</li>
+							<!-- Menu Item -->
+							<li>
+								<a
+									class="relative font-medium after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:scale-0 after:bg-main-black after:transition-all hover:after:scale-100"
+									href="#"
+								>
+									<span>About</span>
+								</a>
+							</li>
+						</ul>
+
+						<!-- Footer social -->
+						<ul
+							class="ml-auto flex items-center gap-6 md:order-5 sm:order-2 xs:ml-0"
+						>
+							<li>
+								<a class="group" href="#">
+									<svg
+										class="transition-all group-hover:scale-125"
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+									>
+										<path
+											d="M17.2137 13.3278L17.8356 9.23262H13.9452V6.57631C13.9452 5.45568 14.4877 4.36272 16.2301 4.36272H18V0.876308C18 0.876308 16.3945 0.599609 14.8603 0.599609C11.6548 0.599609 9.56164 2.56141 9.56164 6.11145V9.23262H6V13.3278H9.56164V23.2281C10.2767 23.3415 11.0082 23.3996 11.7534 23.3996C12.4986 23.3996 13.2301 23.3415 13.9452 23.2281V13.3278H17.2137Z"
+											fill="#000655"
+										/>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a class="group" href="#">
+									<svg
+										class="transition-all group-hover:scale-125"
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+									>
+										<path
+											d="M21.0586 7.18114C21.0678 7.39235 21.0679 7.59395 21.0679 7.80515C21.0771 14.2084 16.3726 21.6004 7.76939 21.6004C5.23194 21.6004 2.7408 20.842 0.601562 19.4212C0.971993 19.4692 1.34242 19.4884 1.71285 19.4884C3.81505 19.4884 5.86168 18.7588 7.51935 17.4052C5.51903 17.3668 3.75948 16.0132 3.14827 14.0356C3.85209 14.1796 4.57443 14.1508 5.25973 13.9492C3.08345 13.5076 1.51838 11.5204 1.50912 9.20675C1.50912 9.18755 1.50912 9.16835 1.50912 9.14915C2.15737 9.52355 2.88897 9.73475 3.62983 9.75395C1.5832 8.33315 0.944211 5.50114 2.18515 3.28353C4.56517 6.31714 8.06574 8.15075 11.8256 8.35235C11.4459 6.67234 11.9645 4.90594 13.1777 3.71553C15.0576 1.88193 18.0211 1.97793 19.7991 3.92673C20.8456 3.71553 21.855 3.31233 22.7718 2.74593C22.4199 3.86913 21.6883 4.81954 20.7159 5.42434C21.642 5.30914 22.5496 5.04994 23.4016 4.66594C22.7718 5.64514 21.9754 6.48994 21.0586 7.18114Z"
+											fill="#000655"
+										/>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a class="group" href="#">
+									<svg
+										class="transition-all group-hover:scale-125"
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+									>
+										<g clip-path="url(#clip0_1_430)">
+											<path
+												d="M12 2.16276C15.206 2.16276 15.5824 2.17705 16.8496 2.23422C18.0215 2.28662 18.655 2.48194 19.079 2.64867C19.6411 2.8678 20.0413 3.12505 20.4605 3.54426C20.8797 3.96348 21.1417 4.36364 21.3561 4.92576C21.5181 5.34974 21.7182 5.98333 21.7706 7.15522C21.8277 8.42239 21.842 8.79873 21.842 12.0048C21.842 15.2108 21.8277 15.5871 21.7706 16.8543C21.7182 18.0262 21.5228 18.6598 21.3561 19.0838C21.137 19.6459 20.8797 20.046 20.4605 20.4653C20.0413 20.8845 19.6411 21.1465 19.079 21.3609C18.655 21.5228 18.0215 21.7229 16.8496 21.7753C15.5824 21.8325 15.206 21.8468 12 21.8468C8.79397 21.8468 8.41763 21.8325 7.15046 21.7753C5.97857 21.7229 5.34498 21.5276 4.921 21.3609C4.35888 21.1417 3.95872 20.8845 3.5395 20.4653C3.12029 20.046 2.85828 19.6459 2.64391 19.0838C2.48194 18.6598 2.28186 18.0262 2.22946 16.8543C2.17229 15.5871 2.158 15.2108 2.158 12.0048C2.158 8.79873 2.17229 8.42239 2.22946 7.15522C2.28186 5.98333 2.47718 5.34974 2.64391 4.92576C2.86304 4.36364 3.12029 3.96348 3.5395 3.54426C3.95872 3.12505 4.35888 2.86304 4.921 2.64867C5.34498 2.4867 5.97857 2.28662 7.15046 2.23422C8.41763 2.17229 8.79874 2.16276 12 2.16276ZM12 0C8.74157 0 8.33188 0.0142914 7.05042 0.0714569C5.77372 0.128622 4.90195 0.333466 4.13974 0.628821C3.34895 0.933704 2.68202 1.34815 2.01509 2.01509C1.34816 2.68202 0.938468 3.35371 0.628821 4.13974C0.333466 4.90195 0.128623 5.77372 0.071457 7.05518C0.0142914 8.33188 0 8.74156 0 12C0 15.2584 0.0142914 15.6681 0.071457 16.9496C0.128623 18.2263 0.333466 19.0981 0.628821 19.865C0.933705 20.6558 1.34816 21.3227 2.01509 21.9897C2.68202 22.6566 3.35371 23.0663 4.13974 23.3759C4.90195 23.6713 5.77372 23.8761 7.05519 23.9333C8.33665 23.9905 8.74157 24.0048 12.0048 24.0048C15.268 24.0048 15.6729 23.9905 16.9544 23.9333C18.2311 23.8761 19.1028 23.6713 19.8698 23.3759C20.6606 23.0711 21.3275 22.6566 21.9945 21.9897C22.6614 21.3227 23.0711 20.6511 23.3807 19.865C23.6761 19.1028 23.8809 18.231 23.9381 16.9496C23.9953 15.6681 24.0095 15.2632 24.0095 12C24.0095 8.7368 23.9953 8.33188 23.9381 7.05042C23.8809 5.77372 23.6761 4.90194 23.3807 4.13497C23.0758 3.34418 22.6614 2.67725 21.9945 2.01032C21.3275 1.34339 20.6558 0.933704 19.8698 0.624057C19.1076 0.328702 18.2358 0.123859 16.9544 0.0666931C15.6681 0.0142914 15.2584 0 12 0Z"
+												fill="#000655"
+											/>
+											<path
+												d="M12 2.16276C15.206 2.16276 15.5824 2.17705 16.8496 2.23422C18.0215 2.28662 18.655 2.48194 19.079 2.64867C19.6411 2.8678 20.0413 3.12505 20.4605 3.54426C20.8797 3.96348 21.1417 4.36364 21.3561 4.92576C21.5181 5.34974 21.7182 5.98333 21.7706 7.15522C21.8277 8.42239 21.842 8.79873 21.842 12.0048C21.842 15.2108 21.8277 15.5871 21.7706 16.8543C21.7182 18.0262 21.5228 18.6598 21.3561 19.0838C21.137 19.6459 20.8797 20.046 20.4605 20.4653C20.0413 20.8845 19.6411 21.1465 19.079 21.3609C18.655 21.5228 18.0215 21.7229 16.8496 21.7753C15.5824 21.8325 15.206 21.8468 12 21.8468C8.79397 21.8468 8.41763 21.8325 7.15046 21.7753C5.97857 21.7229 5.34498 21.5276 4.921 21.3609C4.35888 21.1417 3.95872 20.8845 3.5395 20.4653C3.12029 20.046 2.85828 19.6459 2.64391 19.0838C2.48194 18.6598 2.28186 18.0262 2.22946 16.8543C2.17229 15.5871 2.158 15.2108 2.158 12.0048C2.158 8.79873 2.17229 8.42239 2.22946 7.15522C2.28186 5.98333 2.47718 5.34974 2.64391 4.92576C2.86304 4.36364 3.12029 3.96348 3.5395 3.54426C3.95872 3.12505 4.35888 2.86304 4.921 2.64867C5.34498 2.4867 5.97857 2.28662 7.15046 2.23422C8.41763 2.17229 8.79874 2.16276 12 2.16276Z"
+												fill="#000655"
+											/>
+											<path
+												d="M12.0003 5.84082C8.59894 5.84082 5.83594 8.59906 5.83594 12.0052C5.83594 15.4113 8.59417 18.1695 12.0003 18.1695C15.4064 18.1695 18.1646 15.4113 18.1646 12.0052C18.1646 8.59906 15.4064 5.84082 12.0003 5.84082ZM12.0003 16.002C9.78989 16.002 7.9987 14.2108 7.9987 12.0004C7.9987 9.79 9.78989 7.99882 12.0003 7.99882C14.2107 7.99882 16.0019 9.79 16.0019 12.0004C16.0019 14.2108 14.2107 16.002 12.0003 16.002Z"
+												fill="white"
+											/>
+											<path
+												d="M18.4074 7.03163C19.202 7.03163 19.8461 6.38752 19.8461 5.59296C19.8461 4.79841 19.202 4.1543 18.4074 4.1543C17.6129 4.1543 16.9688 4.79841 16.9688 5.59296C16.9688 6.38752 17.6129 7.03163 18.4074 7.03163Z"
+												fill="white"
+											/>
+										</g>
+										<defs>
+											<clipPath id="clip0_1_430">
+												<rect width="24" height="24" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a class="group" href="#">
+									<svg
+										class="transition-all group-hover:scale-125"
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+									>
+										<g clip-path="url(#clip0_1_434)">
+											<path
+												d="M5.4053 23.986H0.361131V7.99609H5.4053V23.986Z"
+												fill="#000655"
+											/>
+											<path
+												d="M2.87972 5.78024C2.30755 5.77703 1.74915 5.60473 1.275 5.28511C0.800851 4.96549 0.432201 4.51285 0.215575 3.98434C-0.00105109 3.45582 -0.0559438 2.87511 0.0578241 2.31549C0.171592 1.75587 0.448922 1.24243 0.854814 0.839954C1.26071 0.43748 1.77697 0.164017 2.33844 0.0540754C2.89992 -0.0558659 3.48145 0.00264305 4.00964 0.222217C4.53783 0.441792 4.98901 0.81259 5.30623 1.28782C5.62346 1.76305 5.79251 2.3214 5.79206 2.89242C5.79746 3.27472 5.72567 3.65419 5.58099 4.00821C5.43631 4.36224 5.22168 4.68357 4.94991 4.95305C4.67814 5.22253 4.35478 5.43465 3.99912 5.57677C3.64345 5.71888 3.26276 5.78808 2.87972 5.78024Z"
+												fill="#000655"
+											/>
+											<path
+												d="M23.9977 24H18.9558V15.2645C18.9558 12.6882 17.8585 11.893 16.4419 11.893C14.9461 11.893 13.4783 13.0184 13.4783 15.3296V24H8.43413V8.00772H13.2849V10.2236H13.3502C13.8371 9.24004 15.5426 7.55897 18.145 7.55897C20.9595 7.55897 24 9.22609 24 14.1089L23.9977 24Z"
+												fill="#000655"
+											/>
+										</g>
+										<defs>
+											<clipPath id="clip0_1_434">
+												<rect width="24" height="24" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</a>
+							</li>
+						</ul>
+
+						<!-- Privacy -->
+						<div
+							class="col-span-2 flex flex-col text-xs leading-none md:order-4 sm:order-5 xs:col-span-1"
+						>
+							<a href="#" target="_blank">Privacy Policy Terms</a>
+							<p>
+								Reintech Ltd. is a company registered in England and Wales (No.
+								08418922)
+							</p>
+						</div>
+						<!-- Language -->
+						<div class="ml-auto flex gap-4 md:order-3 sm:order-4 xs:ml-0">
+							<button class="lang-btn active">En</button>
+							<button class="lang-btn">Ua</button>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<script src="./js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	.container {
+		@apply max-w-[1360px];
+	}
+	body {
+		@apply relative font-space text-main-black;
+	}
+	section {
+		@apply my-[120px] md:my-[100px] sm:my-[80px];
+	}
+
+	h2 {
+		@apply pl-[60px] text-[64px] font-bold leading-none text-main-black md:pl-0 sm:text-5xl;
+	}
+
+	h3 {
+		@apply text-[32px] font-bold leading-none tracking-[0.32px] text-main-black xs:text-2xl;
+	}
+}
+
+@layer components {
+	/* Hero Box */
+	.hero-box {
+		@apply relative flex  h-[240px] w-[300px] shrink-0 cursor-pointer flex-col overflow-hidden rounded-[20px] px-10 pb-10 pt-[50px] transition-all;
+	}
+	/* Button */
+	.btn {
+		@apply inline-block max-w-fit rounded-full bg-main-blue py-5 px-[60px] text-2xl font-bold leading-none text-white transition-colors hover:bg-main-black sm:max-w-full xs:py-3 xs:px-10 xs:text-base;
+	}
+
+	/* Section Title */
+	.section-title {
+		@apply text-3xl font-semibold leading-normal text-black md:text-2xl  sm:text-xl;
+	}
+
+	/* Overlay */
+	.overlay.active {
+		@apply fixed left-0 top-0 right-0 bottom-0 z-10 bg-black/50;
+	}
+
+	/* Lang Button */
+	.lang-btn.active {
+		@apply font-bold;
+	}
+
+	/* Input */
+	.input {
+		@apply border-b border-transparent border-b-[#CCCDDD] bg-transparent p-5 text-lg font-medium placeholder:text-main-shadow  focus:border-transparent focus:border-b-main-blue focus:ring-0 md:max-w-[400px];
+	}
+}
+
+@layer utilities {
+	.hero-box.active {
+		@apply h-[410px] w-[430px]  p-10;
+	}
+}
+
+/* Swiper */
+.swiper-pagination .swiper-pagination-bullet {
+	width: 80px;
+	height: 4px;
+	border-radius: 10px;
+	background: #f5f8fb;
+	opacity: 1;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+	background: #d3dde9;
+}
+
+.marquee {
+	--gap: 60px;
+	display: flex;
+	overflow: hidden;
+	user-select: none;
+	gap: var(--gap);
+}
+
+.marquee__content {
+	flex-shrink: 0;
+	display: flex;
+	justify-content: space-around;
+	min-width: 100%;
+	gap: var(--gap);
+}
+.marquee__content-left {
+	animation: 10s scrollToLeft infinite linear;
+}
+.marquee__content-right {
+	animation: 10s scrollToRight infinite linear reverse;
+}
+@keyframes scrollToLeft {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(calc(-100% - var(--gap)));
+	}
+}
+@keyframes scrollToRight {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(calc(-100% - var(--gap)));
+	}
+}
