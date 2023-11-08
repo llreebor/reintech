@@ -77,7 +77,9 @@ function accordion() {
 		})
 	})
 }
-accordion()
+if (document.querySelectorAll('.accordion-item')) {
+	accordion()
+}
 
 // Animation Mobile Submenu
 /* SLIDE UP */
@@ -202,6 +204,25 @@ const swiperTalents = new Swiper('#talents-slider', {
 
 // Hero
 const btn = document.getElementById('hero-box-1')
-btn.addEventListener('click', () => {
-	btn.classList.toggle('active')
-})
+if (btn) {
+	btn.addEventListener('click', () => {
+		btn.classList.toggle('active')
+	})
+}
+
+// Price Page
+function toggleRadioInputs() {
+	const inputs = document.querySelectorAll('.radio-input')
+	const blocks = document.querySelectorAll('.radio-input-block')
+	blocks[0].classList.add('active')
+	inputs.forEach((input, i) => {
+		input.addEventListener('change', () => {
+			blocks.forEach((block) => block.classList.remove('active'))
+			if (input.checked) {
+				console.log(input.value)
+				blocks[i].classList.add('active')
+			}
+		})
+	})
+}
+toggleRadioInputs()

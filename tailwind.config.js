@@ -22,6 +22,7 @@ module.exports = {
 				'main-blue': '#2F6EF6',
 				'main-shadow': '#8083AA',
 				'blue-shadow': '#F5F8FB',
+				'black-shadow': '#CCCDDD',
 				'main-green': '#5DC36D',
 			},
 

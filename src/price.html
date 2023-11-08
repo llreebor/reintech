@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html class="h-full" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>RAINTECH</title>
+		<link rel="stylesheet" href="./css/output.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
+	</head>
+
+	<body class="relative h-full">
+		<div class="wrapper flex min-h-full flex-col">
+			<div id="overlay" class="overlay duration-300"></div>
+			<!-- Header -->
+			<header>
+				<div class="container">
+					<div
+						class="flex items-center justify-between py-10 sm:justify-center sm:py-5"
+					>
+						<a href=" #" class="z-20 flex">
+							<img src="./img/logo.svg" alt="logo" />
+						</a>
+						<!-- Desktop menu -->
+						<ul
+							id="menu"
+							class="z-10 flex animate-fadeIn items-center gap-10 md:hidden"
+						>
+							<!-- Menu Item -->
+							<li>
+								<a
+									class="relative font-medium after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:scale-0 after:bg-main-black after:transition-all hover:after:scale-100"
+									href="#"
+								>
+									<span>Services</span>
+								</a>
+							</li>
+							<!-- Menu Item -->
+							<li>
+								<a
+									class="relative font-medium after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:scale-0 after:bg-main-black after:transition-all hover:after:scale-100"
+									href="#"
+								>
+									<span>Blog</span>
+								</a>
+							</li>
+							<!-- Menu Item -->
+							<li>
+								<a
+									class="relative font-medium after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:scale-0 after:bg-main-black after:transition-all hover:after:scale-100"
+									href="#"
+								>
+									<span>Pricing</span>
+								</a>
+							</li>
+							<!-- Menu Item -->
+							<li>
+								<a
+									class="relative font-medium after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:scale-0 after:bg-main-black after:transition-all hover:after:scale-100"
+									href="#"
+								>
+									<span>About</span>
+								</a>
+							</li>
+						</ul>
+
+						<!-- Header actions -->
+						<ul class="flex items-center gap-6 md:ml-auto md:mr-6 sm:hidden">
+							<li>
+								<a
+									class="relative font-medium after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:scale-0 after:bg-main-black after:transition-all hover:after:scale-100"
+									href="#"
+								>
+									Apply as Developer
+								</a>
+							</li>
+							<li>
+								<a
+									class="rounded-full border border-main-shadow py-[10px] px-9 font-medium leading-none transition-colors hover:border-main-black hover:bg-main-black hover:text-white"
+									href="#"
+								>
+									Contact Us
+								</a>
+							</li>
+						</ul>
+
+						<!-- Mobile menu -->
+						<ul
+							id="mobile-menu"
+							class="fixed -left-full right-0 top-0 bottom-0 z-20 flex h-screen w-[90%] flex-col items-center gap-[30px] overflow-auto bg-white pt-[60px] transition-all duration-300"
+						>
+							<li class="absolute right-10 top-10 sm:top-5 sm:right-5">
+								<button id="close-menu">
+									<img src="./img/burger-close.svg" alt="img" />
+								</button>
+							</li>
+							<li>
+								<a href="#" class="text-xl font-medium">Home</a>
+							</li>
+
+							<li>
+								<a href="#" class="text-xl font-medium">About Us</a>
+							</li>
+							<li>
+								<a href="#" class="text-xl font-medium">Features</a>
+							</li>
+							<li>
+								<a href="#" class="text-xl font-medium">Solution</a>
+							</li>
+
+							<li class="mt-[70px] hidden sm:block">
+								<a class="text-xl font-medium" href="#">Apply as Developer</a>
+							</li>
+							<li class="hidden sm:block">
+								<a
+									class="rounded-full border border-main-shadow py-[10px] px-9 text-xl font-medium leading-none transition-colors"
+									href="#"
+								>
+									Contact Us
+								</a>
+							</li>
+						</ul>
+
+						<!-- Burger Button -->
+						<button
+							id="burger"
+							aria-label="burger-button"
+							class="z-10 hidden md:block sm:absolute sm:left-5"
+						>
+							<img src="./img/burger-open.svg" alt="icon" />
+						</button>
+					</div>
+				</div>
+			</header>
+
+			<!-- Main Content -->
+			<main class="flex-auto">
+				<!-- Section 1 ( Price ) -->
+				<section class="mt-5">
+					<div class="container">
+						<h2 class="pl-0">Pricing</h2>
+						<p class="mt-4 text-2xl font-medium leading-none sm:text-lg">
+							Flexible, transparent and straightforward
+						</p>
+
+						<!-- Plan Radio Inputs -->
+						<div class="mx-auto mt-[70px] max-w-[808px] sm:mt-[30px]">
+							<h3 class="text-center sm:hidden">Select your plan</h3>
+
+							<!-- Inputs -->
+
+							<div
+								class="mt-[50px] grid grid-cols-2 gap-5 sm:mt-0 sm:grid-cols-1 sm:gap-[10px]"
+							>
+								<!-- 1st input -->
+								<div class="radio-input-block group">
+									<div
+										class="h-full rounded-[20px] border border-black-shadow bg-white group-[.active]:border-transparent group-[.active]:bg-main-blue group-[.active]:text-white sm:p-10"
+									>
+										<label
+											class="flex cursor-pointer justify-between border-b border-b-black-shadow p-10 group-[.active]:border-white/20 sm:border-b-0 sm:p-0"
+											for="recruiting"
+										>
+											<h3 class="group-[.active]:text-white sm:text-2xl">
+												Recruiting
+											</h3>
+											<input
+												class="radio-input h-8 w-8 rounded-full border-black-shadow outline-none ring-0 checked:bg-[url('../img/checkbox-checked.svg')] checked:text-transparent focus:ring-0 focus:ring-offset-0"
+												type="radio"
+												checked
+												value="recruiting"
+												name="recruiting"
+												id="recruiting"
+											/>
+										</label>
+										<ul
+											class="grid gap-6 py-8 px-10 sm:mt-[30px] sm:grid-cols-2 sm:p-0 xs:grid-cols-1"
+										>
+											<li class="flex items-start gap-3 sm:gap-2">
+												<svg
+													class="shrink-0"
+													xmlns="http://www.w3.org/2000/svg"
+													width="32"
+													height="32"
+													viewBox="0 0 32 32"
+													fill="none"
+												>
+													<path
+														class="shrink-0 group-[.active]:stroke-white"
+														d="M9 16.3846L13.3077 20.6923L23 11"
+														stroke="#5DC36D"
+														stroke-width="3"
+														stroke-linejoin="round"
+													/>
+												</svg>
+												<span
+													class="text-2xl font-medium leading-none sm:text-base"
+												>
+													Vetting
+												</span>
+											</li>
+
+											<li class="flex items-start gap-3 sm:gap-2">
+												<svg
+													class="shrink-0"
+													xmlns="http://www.w3.org/2000/svg"
+													width="32"
+													height="32"
+													viewBox="0 0 32 32"
+													fill="none"
+												>
+													<path
+														class="shrink-0 group-[.active]:stroke-white"
+														d="M9 16.3846L13.3077 20.6923L23 11"
+														stroke="#5DC36D"
+														stroke-width="3"
+														stroke-linejoin="round"
+													/>
+												</svg>
+												<span
+													class="text-2xl font-medium leading-none sm:text-base"
+												>
+													Personal recruiter
+												</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- 2nd input -->
+								<div class="radio-input-block group">
+									<div
+										class="h-full rounded-[20px] border border-black-shadow bg-white group-[.active]:border-transparent group-[.active]:bg-main-green group-[.active]:text-white sm:p-10"
+									>
+										<label
+											class="flex cursor-pointer justify-between border-b border-b-black-shadow p-10 group-[.active]:border-white/20 sm:border-b-0 sm:p-0"
+											for="payroll"
+										>
+											<h3 class="group-[.active]:text-white sm:text-2xl">
+												Payroll
+											</h3>
+											<input
+												class="radio-input h-8 w-8 rounded-full border-black-shadow outline-none ring-0 checked:bg-[url('../img/checkbox-checked.svg')] checked:text-transparent focus:ring-0 focus:ring-offset-0"
+												type="radio"
+												name="recruiting"
+												value="payroll"
+												id="payroll"
+											/>
+										</label>
+										<ul
+											class="grid gap-6 py-8 px-10 sm:mt-[30px] sm:grid-cols-2 sm:p-0 xs:grid-cols-1"
+										>
+											<li class="flex items-start gap-3 sm:gap-2">
+												<svg
+													class="shrink-0"
+													xmlns="http://www.w3.org/2000/svg"
+													width="32"
+													height="32"
+													viewBox="0 0 32 32"
+													fill="none"
+												>
+													<path
+														class="shrink-0 group-[.active]:stroke-white"
+														d="M9 16.3846L13.3077 20.6923L23 11"
+														stroke="#5DC36D"
+														stroke-width="3"
+														stroke-linejoin="round"
+													/>
+												</svg>
+												<span
+													class="text-2xl font-medium leading-none sm:text-base"
+												>
+													Compliance
+												</span>
+											</li>
+
+											<li class="flex items-start gap-3 sm:gap-2">
+												<svg
+													class="shrink-0"
+													xmlns="http://www.w3.org/2000/svg"
+													width="32"
+													height="32"
+													viewBox="0 0 32 32"
+													fill="none"
+												>
+													<path
+														class="shrink-0 group-[.active]:stroke-white"
+														d="M9 16.3846L13.3077 20.6923L23 11"
+														stroke="#5DC36D"
+														stroke-width="3"
+														stroke-linejoin="round"
+													/>
+												</svg>
+												<span
+													class="text-2xl font-medium leading-none sm:text-base"
+												>
+													HR
+												</span>
+											</li>
+
+											<li class="flex items-start gap-3 sm:gap-2">
+												<svg
+													class="shrink-0"
+													xmlns="http://www.w3.org/2000/svg"
+													width="32"
+													height="32"
+													viewBox="0 0 32 32"
+													fill="none"
+												>
+													<path
+														class="shrink-0 group-[.active]:stroke-white"
+														d="M9 16.3846L13.3077 20.6923L23 11"
+														stroke="#5DC36D"
+														stroke-width="3"
+														stroke-linejoin="round"
+													/>
+												</svg>
+												<span
+													class="text-2xl font-medium leading-none sm:text-base"
+												>
+													Time Reporting
+												</span>
+											</li>
+
+											<li class="flex items-start gap-3 sm:gap-2">
+												<svg
+													class="shrink-0"
+													xmlns="http://www.w3.org/2000/svg"
+													width="32"
+													height="32"
+													viewBox="0 0 32 32"
+													fill="none"
+												>
+													<path
+														class="shrink-0 group-[.active]:stroke-white"
+														d="M9 16.3846L13.3077 20.6923L23 11"
+														stroke="#5DC36D"
+														stroke-width="3"
+														stroke-linejoin="round"
+													/>
+												</svg>
+												<span
+													class="text-2xl font-medium leading-none sm:text-base"
+												>
+													Talent management
+												</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Salary -->
+						<div
+							class="mx-auto mt-5 flex max-w-[808px] flex-col items-center justify-center rounded-[20px] bg-blue-shadow p-[60px] text-center sm:p-10"
+						>
+							<h2 class="pl-0">$700</h2>
+							<p
+								class="mt-[30px] text-2xl font-bold leading-none sm:mt-5 sm:text-xl"
+							>
+								developer / month
+							</p>
+							<button class="btn mt-[50px] sm:mt-10">Get Started</button>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<!-- Footer -->
+			<footer class="py-[60px] sm:py-[50px]">
+				<div class="container">
+					<div
+						class="grid grid-cols-3 justify-between gap-10 sm:grid-cols-2 xs:grid-cols-1"
+					>
+						<!-- Footer logo -->
+						<a class="md:order-1" href="#">
+							<img src="./img/logo.svg" alt="img" />
+						</a>
+
+						<!-- Footer menu -->
+						<ul
+							id="menu"
+							class="z-10 flex animate-fadeIn items-center gap-10 md:order-2 md:gap-5 sm:order-3 sm:gap-4"
+						>
+							<!-- Menu Item -->
+							<li>
+								<a
+									class="relative font-medium after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:scale-0 after:bg-main-black after:transition-all hover:after:scale-100"
+									href="#"
+								>
+									<span>Services</span>
+								</a>
+							</li>
+							<!-- Menu Item -->
+							<li>
+								<a
+									class="relative font-medium after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:scale-0 after:bg-main-black after:transition-all hover:after:scale-100"
+									href="#"
+								>
+									<span>Blog</span>
+								</a>
+							</li>
+							<!-- Menu Item -->
+							<li>
+								<a
+									class="relative font-medium after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:scale-0 after:bg-main-black after:transition-all hover:after:scale-100"
+									href="#"
+								>
+									<span>Pricing</span>
+								</a>
+							</li>
+							<!-- Menu Item -->
+							<li>
+								<a
+									class="relative font-medium after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:scale-0 after:bg-main-black after:transition-all hover:after:scale-100"
+									href="#"
+								>
+									<span>About</span>
+								</a>
+							</li>
+						</ul>
+
+						<!-- Footer social -->
+						<ul
+							class="ml-auto flex items-center gap-6 md:order-5 sm:order-2 xs:ml-0"
+						>
+							<li>
+								<a class="group" href="#">
+									<svg
+										class="transition-all group-hover:scale-125"
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+									>
+										<path
+											d="M17.2137 13.3278L17.8356 9.23262H13.9452V6.57631C13.9452 5.45568 14.4877 4.36272 16.2301 4.36272H18V0.876308C18 0.876308 16.3945 0.599609 14.8603 0.599609C11.6548 0.599609 9.56164 2.56141 9.56164 6.11145V9.23262H6V13.3278H9.56164V23.2281C10.2767 23.3415 11.0082 23.3996 11.7534 23.3996C12.4986 23.3996 13.2301 23.3415 13.9452 23.2281V13.3278H17.2137Z"
+											fill="#000655"
+										/>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a class="group" href="#">
+									<svg
+										class="transition-all group-hover:scale-125"
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+									>
+										<path
+											d="M21.0586 7.18114C21.0678 7.39235 21.0679 7.59395 21.0679 7.80515C21.0771 14.2084 16.3726 21.6004 7.76939 21.6004C5.23194 21.6004 2.7408 20.842 0.601562 19.4212C0.971993 19.4692 1.34242 19.4884 1.71285 19.4884C3.81505 19.4884 5.86168 18.7588 7.51935 17.4052C5.51903 17.3668 3.75948 16.0132 3.14827 14.0356C3.85209 14.1796 4.57443 14.1508 5.25973 13.9492C3.08345 13.5076 1.51838 11.5204 1.50912 9.20675C1.50912 9.18755 1.50912 9.16835 1.50912 9.14915C2.15737 9.52355 2.88897 9.73475 3.62983 9.75395C1.5832 8.33315 0.944211 5.50114 2.18515 3.28353C4.56517 6.31714 8.06574 8.15075 11.8256 8.35235C11.4459 6.67234 11.9645 4.90594 13.1777 3.71553C15.0576 1.88193 18.0211 1.97793 19.7991 3.92673C20.8456 3.71553 21.855 3.31233 22.7718 2.74593C22.4199 3.86913 21.6883 4.81954 20.7159 5.42434C21.642 5.30914 22.5496 5.04994 23.4016 4.66594C22.7718 5.64514 21.9754 6.48994 21.0586 7.18114Z"
+											fill="#000655"
+										/>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a class="group" href="#">
+									<svg
+										class="transition-all group-hover:scale-125"
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+									>
+										<g clip-path="url(#clip0_1_430)">
+											<path
+												d="M12 2.16276C15.206 2.16276 15.5824 2.17705 16.8496 2.23422C18.0215 2.28662 18.655 2.48194 19.079 2.64867C19.6411 2.8678 20.0413 3.12505 20.4605 3.54426C20.8797 3.96348 21.1417 4.36364 21.3561 4.92576C21.5181 5.34974 21.7182 5.98333 21.7706 7.15522C21.8277 8.42239 21.842 8.79873 21.842 12.0048C21.842 15.2108 21.8277 15.5871 21.7706 16.8543C21.7182 18.0262 21.5228 18.6598 21.3561 19.0838C21.137 19.6459 20.8797 20.046 20.4605 20.4653C20.0413 20.8845 19.6411 21.1465 19.079 21.3609C18.655 21.5228 18.0215 21.7229 16.8496 21.7753C15.5824 21.8325 15.206 21.8468 12 21.8468C8.79397 21.8468 8.41763 21.8325 7.15046 21.7753C5.97857 21.7229 5.34498 21.5276 4.921 21.3609C4.35888 21.1417 3.95872 20.8845 3.5395 20.4653C3.12029 20.046 2.85828 19.6459 2.64391 19.0838C2.48194 18.6598 2.28186 18.0262 2.22946 16.8543C2.17229 15.5871 2.158 15.2108 2.158 12.0048C2.158 8.79873 2.17229 8.42239 2.22946 7.15522C2.28186 5.98333 2.47718 5.34974 2.64391 4.92576C2.86304 4.36364 3.12029 3.96348 3.5395 3.54426C3.95872 3.12505 4.35888 2.86304 4.921 2.64867C5.34498 2.4867 5.97857 2.28662 7.15046 2.23422C8.41763 2.17229 8.79874 2.16276 12 2.16276ZM12 0C8.74157 0 8.33188 0.0142914 7.05042 0.0714569C5.77372 0.128622 4.90195 0.333466 4.13974 0.628821C3.34895 0.933704 2.68202 1.34815 2.01509 2.01509C1.34816 2.68202 0.938468 3.35371 0.628821 4.13974C0.333466 4.90195 0.128623 5.77372 0.071457 7.05518C0.0142914 8.33188 0 8.74156 0 12C0 15.2584 0.0142914 15.6681 0.071457 16.9496C0.128623 18.2263 0.333466 19.0981 0.628821 19.865C0.933705 20.6558 1.34816 21.3227 2.01509 21.9897C2.68202 22.6566 3.35371 23.0663 4.13974 23.3759C4.90195 23.6713 5.77372 23.8761 7.05519 23.9333C8.33665 23.9905 8.74157 24.0048 12.0048 24.0048C15.268 24.0048 15.6729 23.9905 16.9544 23.9333C18.2311 23.8761 19.1028 23.6713 19.8698 23.3759C20.6606 23.0711 21.3275 22.6566 21.9945 21.9897C22.6614 21.3227 23.0711 20.6511 23.3807 19.865C23.6761 19.1028 23.8809 18.231 23.9381 16.9496C23.9953 15.6681 24.0095 15.2632 24.0095 12C24.0095 8.7368 23.9953 8.33188 23.9381 7.05042C23.8809 5.77372 23.6761 4.90194 23.3807 4.13497C23.0758 3.34418 22.6614 2.67725 21.9945 2.01032C21.3275 1.34339 20.6558 0.933704 19.8698 0.624057C19.1076 0.328702 18.2358 0.123859 16.9544 0.0666931C15.6681 0.0142914 15.2584 0 12 0Z"
+												fill="#000655"
+											/>
+											<path
+												d="M12 2.16276C15.206 2.16276 15.5824 2.17705 16.8496 2.23422C18.0215 2.28662 18.655 2.48194 19.079 2.64867C19.6411 2.8678 20.0413 3.12505 20.4605 3.54426C20.8797 3.96348 21.1417 4.36364 21.3561 4.92576C21.5181 5.34974 21.7182 5.98333 21.7706 7.15522C21.8277 8.42239 21.842 8.79873 21.842 12.0048C21.842 15.2108 21.8277 15.5871 21.7706 16.8543C21.7182 18.0262 21.5228 18.6598 21.3561 19.0838C21.137 19.6459 20.8797 20.046 20.4605 20.4653C20.0413 20.8845 19.6411 21.1465 19.079 21.3609C18.655 21.5228 18.0215 21.7229 16.8496 21.7753C15.5824 21.8325 15.206 21.8468 12 21.8468C8.79397 21.8468 8.41763 21.8325 7.15046 21.7753C5.97857 21.7229 5.34498 21.5276 4.921 21.3609C4.35888 21.1417 3.95872 20.8845 3.5395 20.4653C3.12029 20.046 2.85828 19.6459 2.64391 19.0838C2.48194 18.6598 2.28186 18.0262 2.22946 16.8543C2.17229 15.5871 2.158 15.2108 2.158 12.0048C2.158 8.79873 2.17229 8.42239 2.22946 7.15522C2.28186 5.98333 2.47718 5.34974 2.64391 4.92576C2.86304 4.36364 3.12029 3.96348 3.5395 3.54426C3.95872 3.12505 4.35888 2.86304 4.921 2.64867C5.34498 2.4867 5.97857 2.28662 7.15046 2.23422C8.41763 2.17229 8.79874 2.16276 12 2.16276Z"
+												fill="#000655"
+											/>
+											<path
+												d="M12.0003 5.84082C8.59894 5.84082 5.83594 8.59906 5.83594 12.0052C5.83594 15.4113 8.59417 18.1695 12.0003 18.1695C15.4064 18.1695 18.1646 15.4113 18.1646 12.0052C18.1646 8.59906 15.4064 5.84082 12.0003 5.84082ZM12.0003 16.002C9.78989 16.002 7.9987 14.2108 7.9987 12.0004C7.9987 9.79 9.78989 7.99882 12.0003 7.99882C14.2107 7.99882 16.0019 9.79 16.0019 12.0004C16.0019 14.2108 14.2107 16.002 12.0003 16.002Z"
+												fill="white"
+											/>
+											<path
+												d="M18.4074 7.03163C19.202 7.03163 19.8461 6.38752 19.8461 5.59296C19.8461 4.79841 19.202 4.1543 18.4074 4.1543C17.6129 4.1543 16.9688 4.79841 16.9688 5.59296C16.9688 6.38752 17.6129 7.03163 18.4074 7.03163Z"
+												fill="white"
+											/>
+										</g>
+										<defs>
+											<clipPath id="clip0_1_430">
+												<rect width="24" height="24" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a class="group" href="#">
+									<svg
+										class="transition-all group-hover:scale-125"
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+									>
+										<g clip-path="url(#clip0_1_434)">
+											<path
+												d="M5.4053 23.986H0.361131V7.99609H5.4053V23.986Z"
+												fill="#000655"
+											/>
+											<path
+												d="M2.87972 5.78024C2.30755 5.77703 1.74915 5.60473 1.275 5.28511C0.800851 4.96549 0.432201 4.51285 0.215575 3.98434C-0.00105109 3.45582 -0.0559438 2.87511 0.0578241 2.31549C0.171592 1.75587 0.448922 1.24243 0.854814 0.839954C1.26071 0.43748 1.77697 0.164017 2.33844 0.0540754C2.89992 -0.0558659 3.48145 0.00264305 4.00964 0.222217C4.53783 0.441792 4.98901 0.81259 5.30623 1.28782C5.62346 1.76305 5.79251 2.3214 5.79206 2.89242C5.79746 3.27472 5.72567 3.65419 5.58099 4.00821C5.43631 4.36224 5.22168 4.68357 4.94991 4.95305C4.67814 5.22253 4.35478 5.43465 3.99912 5.57677C3.64345 5.71888 3.26276 5.78808 2.87972 5.78024Z"
+												fill="#000655"
+											/>
+											<path
+												d="M23.9977 24H18.9558V15.2645C18.9558 12.6882 17.8585 11.893 16.4419 11.893C14.9461 11.893 13.4783 13.0184 13.4783 15.3296V24H8.43413V8.00772H13.2849V10.2236H13.3502C13.8371 9.24004 15.5426 7.55897 18.145 7.55897C20.9595 7.55897 24 9.22609 24 14.1089L23.9977 24Z"
+												fill="#000655"
+											/>
+										</g>
+										<defs>
+											<clipPath id="clip0_1_434">
+												<rect width="24" height="24" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</a>
+							</li>
+						</ul>
+
+						<!-- Privacy -->
+						<div
+							class="col-span-2 flex flex-col text-xs leading-none md:order-4 sm:order-5 xs:col-span-1"
+						>
+							<a href="#" target="_blank">Privacy Policy Terms</a>
+							<p>
+								Reintech Ltd. is a company registered in England and Wales (No.
+								08418922)
+							</p>
+						</div>
+						<!-- Language -->
+						<div class="ml-auto flex gap-4 md:order-3 sm:order-4 xs:ml-0">
+							<button class="lang-btn active">En</button>
+							<button class="lang-btn">Ua</button>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<script src="./js/main.js"></script>
+	</body>
+</html>
