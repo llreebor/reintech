@@ -225,4 +225,27 @@ function toggleRadioInputs() {
 		})
 	})
 }
-toggleRadioInputs()
+
+// Increase & Decrease Team Size
+function toggleTeamSizeNumber() {
+	const result = document.getElementById('team-size')
+	const increaseBtn = document.getElementById('team-size-increase')
+	const decreaseBtn = document.getElementById('team-size-decrease')
+
+	let initialValue = 2
+
+	increaseBtn.addEventListener('click', () => {
+		result.textContent = ++initialValue
+	})
+	decreaseBtn.addEventListener('click', () => {
+		// result.textContent = --initialValue
+		if (initialValue > 2) {
+			result.textContent = --initialValue
+		}
+	})
+}
+
+if (document.querySelectorAll('.radio-input')) {
+	toggleRadioInputs()
+	toggleTeamSizeNumber()
+}
