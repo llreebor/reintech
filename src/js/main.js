@@ -58,7 +58,7 @@ function toggleCookieMsg() {
 
 // ====================================== [END] Global Site Scripts ======================================
 
-// ====================================== [START] Home Page Scripts ======================================
+// ================================ [START] Home & Developer Page Scripts ================================
 // Accodrion
 function accordion() {
 	const items = document.querySelectorAll('.accordion-item')
@@ -165,7 +165,10 @@ const slideToggle = (target, duration = 300) => {
 }
 
 // Inits
-if (document.getElementById('home-page')) {
+if (
+	document.getElementById('home-page') ||
+	document.getElementById('developer-page')
+) {
 	accordion()
 
 	// Testimonials slider
@@ -217,7 +220,7 @@ if (document.getElementById('home-page')) {
 		},
 	})
 }
-// ======================================= [END] Home Page Scripts =======================================
+// ================================= [END] Home & Developer Page Scripts =================================
 
 // ===================================== [START] Price Page Scripts =====================================
 // Price Page

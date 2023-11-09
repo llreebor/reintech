@@ -33,7 +33,7 @@
 	}
 	/* Button */
 	.btn {
-		@apply inline-block max-w-fit rounded-full bg-main-blue py-5 px-[60px] text-2xl font-bold leading-none text-white transition-colors hover:bg-main-black sm:max-w-full xs:py-3 xs:px-10 xs:text-base;
+		@apply inline-block max-w-fit rounded-full bg-main-blue py-5 px-[60px] text-center text-2xl font-bold leading-none text-white transition-colors hover:bg-main-black sm:max-w-full sm:justify-center xs:py-3 xs:px-10 xs:text-base;
 	}
 
 	/* Section Title */
