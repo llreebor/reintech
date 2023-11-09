@@ -4,7 +4,7 @@
 
 @layer base {
 	.container {
-		@apply max-w-[1360px];
+		@apply max-w-[1240px];
 	}
 	body {
 		@apply relative font-space text-main-black;
@@ -14,7 +14,7 @@
 	}
 
 	h2 {
-		@apply pl-[60px] text-[64px] font-bold leading-none text-main-black md:pl-0 sm:text-5xl;
+		@apply text-[64px] font-bold leading-none text-main-black  sm:text-5xl;
 	}
 
 	h3 {
@@ -23,6 +23,10 @@
 }
 
 @layer components {
+	/* Container Big */
+	.container-big {
+		@apply mx-auto max-w-[1360px] px-5;
+	}
 	/* Hero Box */
 	.hero-box {
 		@apply relative flex  h-[240px] w-[300px] shrink-0 cursor-pointer flex-col overflow-hidden rounded-[20px] px-10 pb-10 pt-[50px] transition-all;

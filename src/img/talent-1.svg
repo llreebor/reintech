@@ -1,0 +1,20 @@
+<svg
+									width="64"
+									height="64"
+									viewBox="0 0 64 64"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M41.4737 41L44 57L32 52.2L20 57L22.5263 41"
+										fill="#FFC700"
+									/>
+									<path
+										d="M32 42C43.0457 42 52 33.0457 52 22C52 10.9543 43.0457 2 32 2C20.9543 2 12 10.9543 12 22C12 33.0457 20.9543 42 32 42Z"
+										fill="#FFC700"
+										stroke="#F5F8FB"
+										stroke-width="3"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>

@@ -18,7 +18,7 @@
 		/>
 	</head>
 
-	<body id="price-page" class="relative h-full">
+	<body id="3x-page" class="relative h-full">
 		<div class="wrapper flex min-h-full flex-col">
 			<div id="overlay" class="overlay duration-300"></div>
 			<!-- Header -->
@@ -144,337 +144,356 @@
 
 			<!-- Main Content -->
 			<main class="flex-auto">
-				<!-- Section 1 ( Price ) -->
-				<section class="mt-5">
+				<!-- Section 1 ( Info ) -->
+				<section class="m-0 mt-5">
 					<div class="container">
-						<h2 class="pl-0">Pricing</h2>
+						<h2 class="pl-0">Compare</h2>
 						<p class="mt-4 text-2xl font-medium leading-none sm:text-lg">
-							Flexible, transparent and straightforward
+							1 year tenure, at $50/hr
 						</p>
 
-						<div class="mx-auto max-w-[808px]">
-							<!-- Plan Radio Inputs -->
-							<div class="mt-[70px] sm:mt-[30px]">
-								<h3 class="text-center sm:hidden">Select your plan</h3>
-
-								<!-- Inputs -->
-
-								<div
-									class="mt-[50px] grid grid-cols-2 gap-5 sm:mt-0 sm:grid-cols-1 sm:gap-[10px]"
+						<div class="mx-auto mt-[110px] grid max-w-[880px] grid-cols-2">
+							<div class="flex gap-5 sm:gap-3">
+								<svg
+									class="sm:h-6 sm:w-6 sm:shrink-0"
+									xmlns="http://www.w3.org/2000/svg"
+									width="40"
+									height="40"
+									viewBox="0 0 40 40"
+									fill="none"
 								>
-									<!-- 1st input -->
-									<div class="radio-input-block group">
-										<div
-											class="h-full rounded-[20px] border border-black-shadow bg-white group-[.active]:border-transparent group-[.active]:bg-main-blue group-[.active]:text-white sm:p-10"
-										>
-											<label
-												class="flex cursor-pointer justify-between border-b border-b-black-shadow p-10 group-[.active]:border-white/20 sm:border-b-0 sm:p-0"
-												for="recruiting"
-											>
-												<h3 class="group-[.active]:text-white sm:text-2xl">
-													Recruiting
-												</h3>
-												<input
-													class="radio-input h-8 w-8 rounded-full border-black-shadow outline-none ring-0 checked:bg-[url('../img/checkbox-checked.svg')] checked:text-transparent focus:ring-0 focus:ring-offset-0"
-													type="radio"
-													checked
-													value="recruiting"
-													name="recruiting"
-													id="recruiting"
-												/>
-											</label>
-											<ul
-												class="grid gap-6 py-8 px-10 sm:mt-[30px] sm:grid-cols-2 sm:p-0 xs:grid-cols-1"
-											>
-												<li class="flex items-start gap-3 sm:gap-2">
-													<svg
-														class="shrink-0"
-														xmlns="http://www.w3.org/2000/svg"
-														width="32"
-														height="32"
-														viewBox="0 0 32 32"
-														fill="none"
-													>
-														<path
-															class="shrink-0 group-[.active]:stroke-white"
-															d="M9 16.3846L13.3077 20.6923L23 11"
-															stroke="#5DC36D"
-															stroke-width="3"
-															stroke-linejoin="round"
-														/>
-													</svg>
-													<span
-														class="text-2xl font-medium leading-none sm:text-base"
-													>
-														Vetting
-													</span>
-												</li>
+									<g clip-path="url(#clip0_1_5447)">
+										<path
+											d="M11.0081 31.6373C13.0878 31.6373 15.0829 30.8134 16.5566 29.346L40.0028 6L33.9381 6C31.8584 6 29.8633 6.82388 28.3896 8.29132L4.94336 31.6373H11.0081Z"
+											fill="#2F6EF6"
+										/>
+										<path
+											d="M24.2733 8.38379L11.6092 21.0325C10.1348 22.5052 8.13606 23.3324 6.05214 23.3324H0L12.6642 10.6836C14.1386 9.21096 16.1373 8.38379 18.2212 8.38379L24.2733 8.38379Z"
+											fill="#56AAFF"
+										/>
+										<path
+											d="M25.9899 29.9513C28.0677 29.9513 30.061 29.129 31.5344 27.664L38.0334 21.2021L31.9654 21.2021C29.8876 21.2021 27.8943 22.0245 26.4209 23.4895L19.9219 29.9513H25.9899Z"
+											fill="#FFC700"
+										/>
+									</g>
+									<defs>
+										<clipPath id="clip0_1_5447">
+											<rect width="40" height="40" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
 
-												<li class="flex items-start gap-3 sm:gap-2">
-													<svg
-														class="shrink-0"
-														xmlns="http://www.w3.org/2000/svg"
-														width="32"
-														height="32"
-														viewBox="0 0 32 32"
-														fill="none"
-													>
-														<path
-															class="shrink-0 group-[.active]:stroke-white"
-															d="M9 16.3846L13.3077 20.6923L23 11"
-															stroke="#5DC36D"
-															stroke-width="3"
-															stroke-linejoin="round"
-														/>
-													</svg>
-													<span
-														class="text-2xl font-medium leading-none sm:text-base"
-													>
-														Personal recruiter
-													</span>
-												</li>
-											</ul>
-										</div>
-									</div>
-
-									<!-- 2nd input -->
-									<div class="radio-input-block group">
-										<div
-											class="h-full rounded-[20px] border border-black-shadow bg-white group-[.active]:border-transparent group-[.active]:bg-main-green group-[.active]:text-white sm:p-10"
-										>
-											<label
-												class="flex cursor-pointer justify-between border-b border-b-black-shadow p-10 group-[.active]:border-white/20 sm:border-b-0 sm:p-0"
-												for="payroll"
-											>
-												<h3 class="group-[.active]:text-white sm:text-2xl">
-													Payroll
-												</h3>
-												<input
-													class="radio-input h-8 w-8 rounded-full border-black-shadow outline-none ring-0 checked:bg-[url('../img/checkbox-checked.svg')] checked:text-transparent focus:ring-0 focus:ring-offset-0"
-													type="radio"
-													name="recruiting"
-													value="payroll"
-													id="payroll"
-												/>
-											</label>
-											<ul
-												class="grid gap-6 py-8 px-10 sm:mt-[30px] sm:grid-cols-2 sm:p-0 xs:grid-cols-1"
-											>
-												<li class="flex items-start gap-3 sm:gap-2">
-													<svg
-														class="shrink-0"
-														xmlns="http://www.w3.org/2000/svg"
-														width="32"
-														height="32"
-														viewBox="0 0 32 32"
-														fill="none"
-													>
-														<path
-															class="shrink-0 group-[.active]:stroke-white"
-															d="M9 16.3846L13.3077 20.6923L23 11"
-															stroke="#5DC36D"
-															stroke-width="3"
-															stroke-linejoin="round"
-														/>
-													</svg>
-													<span
-														class="text-2xl font-medium leading-none sm:text-base"
-													>
-														Compliance
-													</span>
-												</li>
-
-												<li class="flex items-start gap-3 sm:gap-2">
-													<svg
-														class="shrink-0"
-														xmlns="http://www.w3.org/2000/svg"
-														width="32"
-														height="32"
-														viewBox="0 0 32 32"
-														fill="none"
-													>
-														<path
-															class="shrink-0 group-[.active]:stroke-white"
-															d="M9 16.3846L13.3077 20.6923L23 11"
-															stroke="#5DC36D"
-															stroke-width="3"
-															stroke-linejoin="round"
-														/>
-													</svg>
-													<span
-														class="text-2xl font-medium leading-none sm:text-base"
-													>
-														HR
-													</span>
-												</li>
-
-												<li class="flex items-start gap-3 sm:gap-2">
-													<svg
-														class="shrink-0"
-														xmlns="http://www.w3.org/2000/svg"
-														width="32"
-														height="32"
-														viewBox="0 0 32 32"
-														fill="none"
-													>
-														<path
-															class="shrink-0 group-[.active]:stroke-white"
-															d="M9 16.3846L13.3077 20.6923L23 11"
-															stroke="#5DC36D"
-															stroke-width="3"
-															stroke-linejoin="round"
-														/>
-													</svg>
-													<span
-														class="text-2xl font-medium leading-none sm:text-base"
-													>
-														Time Reporting
-													</span>
-												</li>
-
-												<li class="flex items-start gap-3 sm:gap-2">
-													<svg
-														class="shrink-0"
-														xmlns="http://www.w3.org/2000/svg"
-														width="32"
-														height="32"
-														viewBox="0 0 32 32"
-														fill="none"
-													>
-														<path
-															class="shrink-0 group-[.active]:stroke-white"
-															d="M9 16.3846L13.3077 20.6923L23 11"
-															stroke="#5DC36D"
-															stroke-width="3"
-															stroke-linejoin="round"
-														/>
-													</svg>
-													<span
-														class="text-2xl font-medium leading-none sm:text-base"
-													>
-														Talent management
-													</span>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
+								<h3 class="sm:text-xl sm:leading-none">Reintech</h3>
 							</div>
-
-							<!-- Salary -->
-							<div
-								class="mt-5 flex flex-col items-center justify-center rounded-[20px] bg-blue-shadow p-[60px] text-center sm:p-10"
-							>
-								<h2 class="pl-0">$700</h2>
-								<p
-									class="mt-[30px] text-2xl font-bold leading-none sm:mt-5 sm:text-xl"
+							<div class="flex gap-5 sm:gap-3">
+								<svg
+									class="sm:h-6 sm:w-6 sm:shrink-0"
+									width="40"
+									height="40"
+									viewBox="0 0 40 40"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
 								>
-									developer / month
-								</p>
-								<button class="btn mt-[50px] sm:mt-10">Get Started</button>
+									<circle cx="20" cy="15" r="8" fill="#000655" />
+									<path
+										d="M20 27C11.7157 27 5 32.8203 5 40H35C35 32.8203 28.2843 27 20 27Z"
+										fill="#000655"
+									/>
+								</svg>
+
+								<h3 class="sm:text-xl sm:leading-none">Recruiter</h3>
 							</div>
-
-							<!-- Size -->
-							<div
-								class="mt-20 flex flex-col items-center gap-[45px] border-b border-b-black-shadow pb-[45px] md:mt-[70px] md:gap-10 md:pb-10 sm:mt-[50px]"
-							>
-								<h3 class="text-center sm:text-[32px]">Team Size</h3>
-
-								<div class="flex items-center gap-7">
-									<button
-										id="team-size-decrease"
-										class="transition-transform hover:scale-125"
+						</div>
+						<hr class="mt-[30px] h-[1px] border-none bg-main-shadow" />
+						<div class="mx-auto grid max-w-[880px] grid-cols-2">
+							<ul class="mt-[30px] flex flex-col gap-5 sm:mt-10">
+								<li class="flex gap-5 sm:gap-3">
+									<svg
+										class="sm:h-6 sm:w-6 sm:shrink-0"
+										width="40"
+										height="40"
+										viewBox="0 0 40 40"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
 									>
-										<svg
-											width="32"
-											height="33"
-											viewBox="0 0 32 33"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<line
-												x1="27"
-												y1="17.041"
-												x2="5"
-												y2="17.041"
-												stroke="#2F6EF6"
-												stroke-width="2"
-											/>
-										</svg>
-									</button>
-									<h3 id="team-size" class="w-11 text-center">2</h3>
-									<button
-										id="team-size-increase"
-										class="transition-transform hover:scale-125"
-									>
-										<svg
-											width="32"
-											height="33"
-											viewBox="0 0 32 33"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<line
-												x1="27"
-												y1="17.041"
-												x2="5"
-												y2="17.041"
-												stroke="#2F6EF6"
-												stroke-width="2"
-											/>
-											<line
-												x1="16"
-												y1="28.041"
-												x2="16"
-												y2="6.04102"
-												stroke="#2F6EF6"
-												stroke-width="2"
-											/>
-										</svg>
-									</button>
-								</div>
-							</div>
+										<path
+											d="M20 36.25C28.9746 36.25 36.25 28.9746 36.25 20C36.25 11.0254 28.9746 3.75 20 3.75C11.0254 3.75 3.75 11.0254 3.75 20C3.75 28.9746 11.0254 36.25 20 36.25Z"
+											fill="#5DC36D"
+										/>
+										<path
+											d="M15.9101 26.25L14.5644 25.1997L24.0899 13.75L25.4356 14.8003L15.9101 26.25ZM23.3817 26.1983C22.4847 26.1983 21.7823 25.9688 21.2748 25.5096C20.7672 25.039 20.5135 24.402 20.5135 23.5985V23.478C20.5135 22.663 20.7672 22.0259 21.2748 21.5668C21.7823 21.0962 22.4847 20.8609 23.3817 20.8609C24.2552 20.8609 24.9516 21.0962 25.471 21.5668C25.9903 22.0259 26.25 22.663 26.25 23.478V23.5985C26.25 24.402 25.9962 25.039 25.4887 25.5096C24.9811 25.9688 24.2788 26.1983 23.3817 26.1983ZM23.3817 24.7865C23.724 24.7865 23.9896 24.6832 24.1785 24.4766C24.3791 24.27 24.4795 24.0002 24.4795 23.6674V23.3919C24.4795 23.059 24.3791 22.7893 24.1785 22.5826C23.9896 22.376 23.724 22.2727 23.3817 22.2727C23.0394 22.2727 22.7679 22.376 22.5673 22.5826C22.3784 22.7893 22.284 23.059 22.284 23.3919V23.6674C22.284 24.0002 22.3784 24.27 22.5673 24.4766C22.7679 24.6832 23.0394 24.7865 23.3817 24.7865ZM16.6183 19.1391C15.7212 19.1391 15.0189 18.9096 14.5113 18.4504C14.0038 17.9798 13.75 17.3427 13.75 16.5393V16.4187C13.75 15.6038 14.0038 14.9667 14.5113 14.5076C15.0189 14.037 15.7212 13.8017 16.6183 13.8017C17.4917 13.8017 18.1881 14.037 18.7075 14.5076C19.2269 14.9667 19.4865 15.6038 19.4865 16.4187V16.5393C19.4865 17.3427 19.2328 17.9798 18.7252 18.4504C18.2177 18.9096 17.5153 19.1391 16.6183 19.1391ZM16.6183 17.7273C16.9606 17.7273 17.2262 17.624 17.415 17.4174C17.6157 17.2107 17.716 16.941 17.716 16.6081V16.3326C17.716 15.9998 17.6157 15.73 17.415 15.5234C17.2262 15.3168 16.9606 15.2135 16.6183 15.2135C16.276 15.2135 16.0045 15.3168 15.8038 15.5234C15.615 15.73 15.5205 15.9998 15.5205 16.3326V16.6081C15.5205 16.941 15.615 17.2107 15.8038 17.4174C16.0045 17.624 16.276 17.7273 16.6183 17.7273Z"
+											fill="white"
+										/>
+									</svg>
 
-							<!-- Saving & Benefits -->
-							<p
-								class="mt-10 hidden text-center text-2xl font-bold leading-tight md:block"
-							>
-								Savings and benefits
-							</p>
-							<div
-								class="mt-[115px] grid grid-cols-3 gap-[70px] md:mt-[60px] sm:mt-10 sm:grid-cols-1 sm:gap-10"
-							>
-								<div class="sm:flex sm:flex-col sm:items-center">
-									<h3 class="sm:text-2xl">10*2 hours</h3>
-									<p
-										class="mt-[15px] text-xl leading-tight sm:mt-2 sm:text-base"
+									<span class="text-2xl font-medium leading-none sm:text-lg">
+										12 * 700 = $8400
+									</span>
+								</li>
+								<li class="flex gap-5 sm:gap-3">
+									<svg
+										class="sm:h-6 sm:w-6 sm:shrink-0"
+										width="40"
+										height="40"
+										viewBox="0 0 40 40"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
 									>
-										of engineering manager
-									</p>
-								</div>
+										<path
+											d="M25.625 26.875C32.5286 26.875 38.125 21.2786 38.125 14.375C38.125 7.47144 32.5286 1.875 25.625 1.875C18.7214 1.875 13.125 7.47144 13.125 14.375C13.125 21.2786 18.7214 26.875 25.625 26.875Z"
+											fill="#5DC36D"
+										/>
+										<path
+											d="M18.125 37.875C26.9616 37.875 34.125 30.7116 34.125 21.875C34.125 13.0384 26.9616 5.875 18.125 5.875C9.28844 5.875 2.125 13.0384 2.125 21.875C2.125 30.7116 9.28844 37.875 18.125 37.875Z"
+											fill="#5DC36D"
+											stroke="white"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+										<path
+											d="M18.2244 28.1297C17.3516 28.1297 16.5783 27.9751 15.9044 27.6657C15.2304 27.3564 14.7001 26.9034 14.3134 26.3068C13.9378 25.6992 13.75 24.9645 13.75 24.1027V23.6884H15.5232V24.1027C15.5232 24.9203 15.7663 25.5335 16.2524 25.9422C16.7495 26.351 17.4069 26.5554 18.2244 26.5554C19.053 26.5554 19.6772 26.3842 20.0971 26.0417C20.5169 25.6881 20.7268 25.2352 20.7268 24.6828C20.7268 24.3182 20.6274 24.0199 20.4285 23.7879C20.2407 23.5559 19.9645 23.3736 19.5999 23.241C19.2353 23.0974 18.7989 22.9648 18.2907 22.8433L17.6776 22.6941C16.9373 22.5174 16.2966 22.3019 15.7552 22.0478C15.2139 21.7827 14.794 21.4347 14.4957 21.0038C14.1974 20.5729 14.0483 20.0205 14.0483 19.3466C14.0483 18.6616 14.214 18.0761 14.5455 17.59C14.8769 17.1039 15.3409 16.7282 15.9375 16.4631C16.5341 16.1979 17.2356 16.0653 18.0421 16.0653C18.8486 16.0653 19.5668 16.2034 20.1965 16.4796C20.8373 16.7558 21.34 17.1646 21.7045 17.706C22.0802 18.2473 22.268 18.9268 22.268 19.7443V20.3409H20.4948V19.7443C20.4948 19.2472 20.3898 18.8439 20.1799 18.5346C19.9811 18.2252 19.6938 17.9987 19.3182 17.8551C18.9536 17.7115 18.5283 17.6397 18.0421 17.6397C17.3351 17.6397 16.7882 17.7888 16.4015 18.0871C16.0148 18.3744 15.8215 18.7776 15.8215 19.2969C15.8215 19.6504 15.9044 19.9432 16.0701 20.1752C16.2468 20.3961 16.5009 20.5784 16.8324 20.7221C17.1638 20.8657 17.5726 20.9927 18.0587 21.1032L18.6719 21.2524C19.4231 21.4181 20.086 21.6335 20.6605 21.8987C21.235 22.1528 21.6825 22.5008 22.0028 22.9427C22.3343 23.3846 22.5 23.9536 22.5 24.6496C22.5 25.3456 22.3232 25.9533 21.9697 26.4725C21.6272 26.9918 21.1356 27.4006 20.4948 27.6989C19.854 27.9861 19.0972 28.1297 18.2244 28.1297ZM17.3958 29.8201V14.375H19.0365V29.8201H17.3958Z"
+											fill="white"
+										/>
+									</svg>
 
-								<div class="sm:flex sm:flex-col sm:items-center">
-									<h3 class="sm:text-2xl">$12K</h3>
-									<p
-										class="mt-[15px] text-xl leading-tight sm:mt-2 sm:text-base"
+									<span class="text-2xl font-medium leading-none sm:text-lg">
+										Payroll
+									</span>
+								</li>
+								<li class="flex gap-5 sm:gap-3">
+									<svg
+										class="sm:h-6 sm:w-6 sm:shrink-0"
+										width="40"
+										height="40"
+										viewBox="0 0 40 40"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
 									>
-										on recruiting cost
-									</p>
-								</div>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M18.5668 3.75C17.9513 3.75 17.3886 4.09776 17.1134 4.64828L15.2143 8.44636L11.1859 7.10353C10.6019 6.90889 9.95816 7.06087 9.52293 7.49609L7.49609 9.52294C7.06086 9.95817 6.90889 10.6019 7.10353 11.1859L8.44635 15.2143L4.64828 17.1134C4.09775 17.3886 3.75 17.9513 3.75 18.5668V21.4332C3.75 22.0487 4.09776 22.6114 4.64828 22.8866L8.44635 24.7857L7.10353 28.8141C6.90889 29.3981 7.06086 30.0418 7.49609 30.4771L9.52293 32.5039C9.95816 32.9391 10.6019 33.0911 11.1859 32.8965L15.2143 31.5536L17.1134 35.3517C17.3886 35.9022 17.9513 36.25 18.5668 36.25H21.4332C22.0487 36.25 22.6114 35.9022 22.8866 35.3517L24.7857 31.5536L28.8141 32.8965C29.3981 33.0911 30.0418 32.9391 30.4771 32.5039L32.5039 30.4771C32.9391 30.0418 33.0911 29.3981 32.8965 28.8141L31.5536 24.7857L35.3517 22.8866C35.9022 22.6114 36.25 22.0487 36.25 21.4332V18.5668C36.25 17.9513 35.9022 17.3886 35.3517 17.1134L31.5536 15.2143L32.8965 11.1859C33.0911 10.6019 32.9391 9.95817 32.5039 9.52294L30.4771 7.49609C30.0418 7.06087 29.3981 6.90889 28.8141 7.10353L24.7857 8.44635L22.8866 4.64828C22.6114 4.09775 22.0487 3.75 21.4332 3.75H18.5668ZM26.5 20C26.5 23.5899 23.5899 26.5 20 26.5C16.4101 26.5 13.5 23.5899 13.5 20C13.5 16.4101 16.4101 13.5 20 13.5C23.5899 13.5 26.5 16.4101 26.5 20Z"
+											fill="#5DC36D"
+										/>
+										<path
+											d="M26.5 20C26.5 23.5899 23.5899 26.5 20 26.5C16.4101 26.5 13.5 23.5899 13.5 20C13.5 16.4101 16.4101 13.5 20 13.5C23.5899 13.5 26.5 16.4101 26.5 20Z"
+											fill="#5DC36D"
+										/>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M21.5762 20.199C22.5027 19.6567 23.125 18.651 23.125 17.5C23.125 15.7741 21.7259 14.375 20 14.375C18.2741 14.375 16.875 15.7741 16.875 17.5C16.875 18.651 17.4973 19.6567 18.4238 20.199C16.0844 20.8048 14.375 22.7249 14.375 25H25.625C25.625 22.7249 23.9156 20.8048 21.5762 20.199Z"
+											fill="white"
+										/>
+									</svg>
 
-								<div class="sm:flex sm:flex-col sm:items-center">
-									<h3 class="sm:text-2xl">20 days</h3>
-									<p
-										class="mt-[15px] text-xl leading-tight sm:mt-2 sm:text-base"
+									<span class="text-2xl font-medium leading-none sm:text-lg">
+										HR
+									</span>
+								</li>
+								<li class="flex gap-5 sm:gap-3">
+									<svg
+										class="sm:h-6 sm:w-6 sm:shrink-0"
+										width="40"
+										height="40"
+										viewBox="0 0 40 40"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
 									>
-										of productive developers’ work
-									</p>
-								</div>
-							</div>
+										<path
+											d="M25.625 26.875C32.5286 26.875 38.125 21.2786 38.125 14.375C38.125 7.47144 32.5286 1.875 25.625 1.875C18.7214 1.875 13.125 7.47144 13.125 14.375C13.125 21.2786 18.7214 26.875 25.625 26.875Z"
+											fill="#5DC36D"
+										/>
+										<path
+											d="M18.125 37.875C26.9616 37.875 34.125 30.7116 34.125 21.875C34.125 13.0384 26.9616 5.875 18.125 5.875C9.28844 5.875 2.125 13.0384 2.125 21.875C2.125 30.7116 9.28844 37.875 18.125 37.875Z"
+											fill="#5DC36D"
+											stroke="white"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+										<path
+											d="M18.2244 28.1297C17.3516 28.1297 16.5783 27.9751 15.9044 27.6657C15.2304 27.3564 14.7001 26.9034 14.3134 26.3068C13.9378 25.6992 13.75 24.9645 13.75 24.1027V23.6884H15.5232V24.1027C15.5232 24.9203 15.7663 25.5335 16.2524 25.9422C16.7495 26.351 17.4069 26.5554 18.2244 26.5554C19.053 26.5554 19.6772 26.3842 20.0971 26.0417C20.5169 25.6881 20.7268 25.2352 20.7268 24.6828C20.7268 24.3182 20.6274 24.0199 20.4285 23.7879C20.2407 23.5559 19.9645 23.3736 19.5999 23.241C19.2353 23.0974 18.7989 22.9648 18.2907 22.8433L17.6776 22.6941C16.9373 22.5174 16.2966 22.3019 15.7552 22.0478C15.2139 21.7827 14.794 21.4347 14.4957 21.0038C14.1974 20.5729 14.0483 20.0205 14.0483 19.3466C14.0483 18.6616 14.214 18.0761 14.5455 17.59C14.8769 17.1039 15.3409 16.7282 15.9375 16.4631C16.5341 16.1979 17.2356 16.0653 18.0421 16.0653C18.8486 16.0653 19.5668 16.2034 20.1965 16.4796C20.8373 16.7558 21.34 17.1646 21.7045 17.706C22.0802 18.2473 22.268 18.9268 22.268 19.7443V20.3409H20.4948V19.7443C20.4948 19.2472 20.3898 18.8439 20.1799 18.5346C19.9811 18.2252 19.6938 17.9987 19.3182 17.8551C18.9536 17.7115 18.5283 17.6397 18.0421 17.6397C17.3351 17.6397 16.7882 17.7888 16.4015 18.0871C16.0148 18.3744 15.8215 18.7776 15.8215 19.2969C15.8215 19.6504 15.9044 19.9432 16.0701 20.1752C16.2468 20.3961 16.5009 20.5784 16.8324 20.7221C17.1638 20.8657 17.5726 20.9927 18.0587 21.1032L18.6719 21.2524C19.4231 21.4181 20.086 21.6335 20.6605 21.8987C21.235 22.1528 21.6825 22.5008 22.0028 22.9427C22.3343 23.3846 22.5 23.9536 22.5 24.6496C22.5 25.3456 22.3232 25.9533 21.9697 26.4725C21.6272 26.9918 21.1356 27.4006 20.4948 27.6989C19.854 27.9861 19.0972 28.1297 18.2244 28.1297ZM17.3958 29.8201V14.375H19.0365V29.8201H17.3958Z"
+											fill="white"
+										/>
+									</svg>
+
+									<span class="text-2xl font-medium leading-none sm:text-lg">
+										Payroll
+									</span>
+								</li>
+								<li class="flex gap-5 sm:gap-3">
+									<svg
+										class="sm:h-6 sm:w-6 sm:shrink-0"
+										width="40"
+										height="40"
+										viewBox="0 0 40 40"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M33.3337 19.9998C33.3337 28.1805 24.4104 34.1305 21.1636 36.0246L20.0042 36.6514L18.837 36.0246C15.5903 34.1305 6.66699 28.1805 6.66699 19.9998V12.0291C6.66699 10.6966 6.66699 10.0304 6.88493 9.45764C7.07745 8.9517 7.3903 8.50026 7.79642 8.14234C8.25615 7.73719 8.87998 7.50326 10.1276 7.03538L10.1277 7.03537L19.064 3.68425L20.0003 3.32471L20.9367 3.68425L29.873 7.03537L29.873 7.03538C31.1207 7.50326 31.7445 7.73719 32.2042 8.14234C32.6104 8.50026 32.9232 8.9517 33.1157 9.45764C33.3337 10.0303 33.3337 10.6966 33.3337 12.0291V12.0291V19.9998Z"
+											fill="#5DC36D"
+										/>
+										<path
+											d="M15 19.1667L18.3333 22.5L25.8333 15"
+											stroke="white"
+											stroke-width="2"
+											stroke-linejoin="round"
+										/>
+									</svg>
+
+									<span class="text-2xl font-medium leading-none sm:text-lg">
+										Risk-free
+									</span>
+								</li>
+							</ul>
+
+							<ul class="mt-[30px] flex flex-col gap-5 sm:mt-10">
+								<li class="flex gap-5 sm:gap-3">
+									<svg
+										class="sm:h-6 sm:w-6 sm:shrink-0"
+										width="40"
+										height="40"
+										viewBox="0 0 40 40"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M20 37.5C29.665 37.5 37.5 29.665 37.5 20C37.5 10.335 29.665 2.5 20 2.5C10.335 2.5 2.5 10.335 2.5 20C2.5 29.665 10.335 37.5 20 37.5Z"
+											fill="#EF7C7C"
+										/>
+										<path
+											d="M15.9101 26.25L14.5644 25.1997L24.0899 13.75L25.4356 14.8003L15.9101 26.25ZM23.3817 26.1983C22.4847 26.1983 21.7823 25.9688 21.2748 25.5096C20.7672 25.039 20.5135 24.402 20.5135 23.5985V23.478C20.5135 22.663 20.7672 22.0259 21.2748 21.5668C21.7823 21.0962 22.4847 20.8609 23.3817 20.8609C24.2552 20.8609 24.9516 21.0962 25.471 21.5668C25.9903 22.0259 26.25 22.663 26.25 23.478V23.5985C26.25 24.402 25.9962 25.039 25.4887 25.5096C24.9811 25.9688 24.2788 26.1983 23.3817 26.1983ZM23.3817 24.7865C23.724 24.7865 23.9896 24.6832 24.1785 24.4766C24.3791 24.27 24.4795 24.0002 24.4795 23.6674V23.3919C24.4795 23.059 24.3791 22.7893 24.1785 22.5826C23.9896 22.376 23.724 22.2727 23.3817 22.2727C23.0394 22.2727 22.7679 22.376 22.5673 22.5826C22.3784 22.7893 22.284 23.059 22.284 23.3919V23.6674C22.284 24.0002 22.3784 24.27 22.5673 24.4766C22.7679 24.6832 23.0394 24.7865 23.3817 24.7865ZM16.6183 19.1391C15.7212 19.1391 15.0189 18.9096 14.5113 18.4504C14.0038 17.9798 13.75 17.3427 13.75 16.5393V16.4187C13.75 15.6038 14.0038 14.9667 14.5113 14.5076C15.0189 14.037 15.7212 13.8017 16.6183 13.8017C17.4917 13.8017 18.1881 14.037 18.7075 14.5076C19.2269 14.9667 19.4865 15.6038 19.4865 16.4187V16.5393C19.4865 17.3427 19.2328 17.9798 18.7252 18.4504C18.2177 18.9096 17.5153 19.1391 16.6183 19.1391ZM16.6183 17.7273C16.9606 17.7273 17.2262 17.624 17.415 17.4174C17.6157 17.2107 17.716 16.941 17.716 16.6081V16.3326C17.716 15.9998 17.6157 15.73 17.415 15.5234C17.2262 15.3168 16.9606 15.2135 16.6183 15.2135C16.276 15.2135 16.0045 15.3168 15.8038 15.5234C15.615 15.73 15.5205 15.9998 15.5205 16.3326V16.6081C15.5205 16.941 15.615 17.2107 15.8038 17.4174C16.0045 17.624 16.276 17.7273 16.6183 17.7273Z"
+											fill="white"
+										/>
+									</svg>
+
+									<span class="text-2xl font-medium leading-none sm:text-lg">
+										15% of $96000 = $14400
+									</span>
+								</li>
+								<li class="flex gap-5 sm:gap-3">
+									<svg
+										class="sm:h-6 sm:w-6 sm:shrink-0"
+										width="40"
+										height="40"
+										viewBox="0 0 40 40"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<line
+											x1="11.6583"
+											y1="11.661"
+											x2="29.336"
+											y2="29.3387"
+											stroke="#EF7C7C"
+											stroke-width="3"
+										/>
+										<line
+											x1="29.3361"
+											y1="11.6612"
+											x2="11.6584"
+											y2="29.3389"
+											stroke="#EF7C7C"
+											stroke-width="3"
+										/>
+									</svg>
+
+									<span class="text-2xl font-medium leading-none sm:text-lg">
+										Payroll
+									</span>
+								</li>
+								<li class="flex gap-5 sm:gap-3">
+									<svg
+										class="sm:h-6 sm:w-6 sm:shrink-0"
+										width="40"
+										height="40"
+										viewBox="0 0 40 40"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<line
+											x1="11.6583"
+											y1="11.661"
+											x2="29.336"
+											y2="29.3387"
+											stroke="#EF7C7C"
+											stroke-width="3"
+										/>
+										<line
+											x1="29.3361"
+											y1="11.6612"
+											x2="11.6584"
+											y2="29.3389"
+											stroke="#EF7C7C"
+											stroke-width="3"
+										/>
+									</svg>
+
+									<span class="text-2xl font-medium leading-none sm:text-lg">
+										HR
+									</span>
+								</li>
+								<li class="flex gap-5 sm:gap-3">
+									<svg
+										class="sm:h-6 sm:w-6 sm:shrink-0"
+										width="40"
+										height="40"
+										viewBox="0 0 40 40"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<line
+											x1="11.6583"
+											y1="11.661"
+											x2="29.336"
+											y2="29.3387"
+											stroke="#EF7C7C"
+											stroke-width="3"
+										/>
+										<line
+											x1="29.3361"
+											y1="11.6612"
+											x2="11.6584"
+											y2="29.3389"
+											stroke="#EF7C7C"
+											stroke-width="3"
+										/>
+									</svg>
+
+									<span class="text-2xl font-medium leading-none sm:text-lg">
+										Payroll
+									</span>
+								</li>
+								<li class="flex gap-5 sm:gap-3">
+									<svg
+										class="sm:h-6 sm:w-6 sm:shrink-0"
+										width="40"
+										height="40"
+										viewBox="0 0 40 40"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M33.5436 19.8001C33.5436 27.9808 24.6204 33.9307 21.3736 35.8249L20.2142 36.4517L19.047 35.8249C15.8002 33.9307 6.87695 27.9808 6.87695 19.8001V11.8294C6.87695 10.4969 6.87695 9.83064 7.09489 9.25793C7.28741 8.75199 7.60026 8.30055 8.00638 7.94264C8.46611 7.53749 9.08994 7.30355 10.3376 6.83568L10.3376 6.83567L19.274 3.48454L20.2103 3.125L21.1466 3.48454L30.0829 6.83567L30.083 6.83567C31.3306 7.30355 31.9545 7.53749 32.4142 7.94264C32.8203 8.30055 33.1332 8.75199 33.3257 9.25793C33.5436 9.83064 33.5436 10.4969 33.5436 11.8294V11.8294V19.8001Z"
+											fill="#EF7C7C"
+										/>
+										<path
+											d="M19.1895 24.2188H21.1328V26.25H19.1895V24.2188ZM15.8984 16.3965C15.8984 14.9902 16.2956 13.8607 17.0898 13.0078C17.8841 12.1484 18.9746 11.7188 20.3613 11.7188C21.6439 11.7188 22.6693 12.0866 23.4375 12.8223C24.2122 13.5514 24.5996 14.4857 24.5996 15.625C24.5996 16.3151 24.4564 16.875 24.1699 17.3047C23.89 17.7344 23.3203 18.3659 22.4609 19.1992C21.8359 19.8047 21.429 20.319 21.2402 20.7422C21.0579 21.1589 20.9668 21.7773 20.9668 22.5977H19.2285C19.2285 21.6667 19.3392 20.918 19.5605 20.3516C19.7819 19.7786 20.2669 19.1243 21.0156 18.3887L21.7969 17.6172C22.0312 17.3958 22.2201 17.1647 22.3633 16.9238C22.6237 16.5007 22.7539 16.0612 22.7539 15.6055C22.7539 14.9674 22.5618 14.4141 22.1777 13.9453C21.8001 13.4766 21.1719 13.2422 20.293 13.2422C19.2057 13.2422 18.4538 13.6458 18.0371 14.4531C17.8027 14.9023 17.6693 15.5501 17.6367 16.3965H15.8984Z"
+											fill="white"
+										/>
+									</svg>
+
+									<span class="text-2xl font-medium leading-none sm:text-lg">
+										No guarantee after 2-3 months
+									</span>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</section>
-
 				<!-- Section 2 ( Stats ) -->
 				<section class="sm:mb-0">
 					<div class="container-big">
@@ -504,7 +523,7 @@
 									/>
 								</svg>
 
-								<h2 class="mt-4 pl-0">3x</h2>
+								<h2 class="e mt-4 pl-0">3x</h2>
 								<p class="mt-2 text-2xl font-medium leading-none">
 									Reduce your involvement's time
 								</p>
@@ -568,7 +587,7 @@
 
 							<!-- Stats Item 4 -->
 							<div
-								class="relative z-0 overflow-hidden rounded-[24px] bg-blue-shadow py-10 pl-[60px] pr-10"
+								class="relative z-0 overflow-hidden rounded-[24px] bg-main-blue py-10 pl-[60px] pr-10"
 							>
 								<img
 									class="absolute bottom-5 right-[25px] z-[-1] object-cover"
@@ -584,12 +603,12 @@
 								>
 									<path
 										d="M17 2C17 1.17157 16.3284 0.5 15.5 0.5H2C1.17157 0.5 0.5 1.17157 0.5 2C0.5 2.82843 1.17157 3.5 2 3.5H14V15.5C14 16.3284 14.6716 17 15.5 17C16.3284 17 17 16.3284 17 15.5V2ZM3.06066 16.5607L16.5607 3.06066L14.4393 0.93934L0.93934 14.4393L3.06066 16.5607Z"
-										fill="#000655"
+										fill="white"
 									/>
 								</svg>
 
-								<h2 class="mt-4 pl-0">1.5х</h2>
-								<p class="mt-2 text-2xl font-medium leading-none">
+								<h2 class="mt-4 pl-0 text-white">1.5х</h2>
+								<p class="mt-2 text-2xl font-medium leading-none text-white">
 									Cost savings
 								</p>
 							</div>

@@ -1,0 +1,14 @@
+<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="66"
+								height="64"
+								viewBox="0 0 66 64"
+								fill="none"
+							>
+								<path
+									opacity="0.2"
+									d="M33 1L2 32M2 32L33 63M2 32H65.5"
+									stroke="#000655"
+									stroke-width="2"
+								/>
+							</svg>
