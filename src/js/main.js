@@ -1,3 +1,4 @@
+// ===================================== [START] Global Site Scripts =====================================
 // Mobile Menu Burger
 function burgerMenu() {
 	const menu = document.querySelector('#mobile-menu')
@@ -40,6 +41,24 @@ function burgerMenu() {
 }
 burgerMenu()
 
+// Cookie msg
+function toggleCookieMsg() {
+	const msg = document.getElementById('cookie')
+	const closeBtn = document.getElementById('close-cookie')
+
+	closeBtn.addEventListener('click', () => {
+		msg.classList.add('hidden')
+	})
+
+	setTimeout(() => {
+		msg.classList.toggle('hidden')
+	}, 500)
+}
+toggleCookieMsg()
+
+// ====================================== [END] Global Site Scripts ======================================
+
+// ====================================== [START] Home Page Scripts ======================================
 // Accodrion
 function accordion() {
 	const items = document.querySelectorAll('.accordion-item')
@@ -77,12 +96,6 @@ function accordion() {
 		})
 	})
 }
-if (document.querySelectorAll('.accordion-item')) {
-	accordion()
-}
-
-// Animation Mobile Submenu
-/* SLIDE UP */
 let slideUp = (target, duration = 300) => {
 	target.style.transitionProperty = 'height, margin, padding'
 	target.style.transitionDuration = duration + 'ms'
@@ -110,7 +123,6 @@ let slideUp = (target, duration = 300) => {
 		target.style.removeProperty('border')
 	}, duration)
 }
-/* SLIDE DOWN */
 let slideDown = (target, duration = 300) => {
 	target.style.removeProperty('display')
 	let display = window.getComputedStyle(target).display
@@ -144,7 +156,6 @@ let slideDown = (target, duration = 300) => {
 		target.style.removeProperty('border')
 	}, duration)
 }
-/* TOOGLE */
 const slideToggle = (target, duration = 300) => {
 	if (window.getComputedStyle(target).display === 'none') {
 		return slideDown(target, duration)
@@ -153,63 +164,62 @@ const slideToggle = (target, duration = 300) => {
 	}
 }
 
-// Testimonials slider
-const swiperTestimonials = new Swiper('#testimonials-slider', {
-	// If we need pagination
-	pagination: {
-		el: '.swiper-pagination',
-	},
-	spaceBetween: 50,
-	breakpoints: {
-		320: {
-			slidesPerView: 1,
-		},
-		768: {
-			slidesPerView: 2,
-		},
-		992: {
-			slidesPerView: 3,
-		},
-	},
-})
+// Inits
+if (document.getElementById('home-page')) {
+	accordion()
 
-// Talents slider
-const swiperTalents = new Swiper('#talents-slider', {
-	// If we need pagination
-	pagination: {
-		el: '.swiper-pagination',
-	},
-	loop: true,
-	inverse: true,
-	spaceBetween: 20,
-	// Navigation arrows
-	navigation: {
-		nextEl: '.swiper-prev',
-	},
-	breakpoints: {
-		320: {
-			slidesPerView: 1,
+	// Testimonials slider
+	const swiperTestimonials = new Swiper('#testimonials-slider', {
+		// If we need pagination
+		pagination: {
+			el: '.swiper-pagination',
 		},
-		768: {
-			slidesPerView: 2,
+		spaceBetween: 50,
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+			},
+			768: {
+				slidesPerView: 2,
+			},
+			992: {
+				slidesPerView: 3,
+			},
 		},
-		992: {
-			slidesPerView: 2.5,
-		},
-		1200: {
-			slidesPerView: 2.8,
-		},
-	},
-})
+	})
 
-// Hero
-const btn = document.getElementById('hero-box-1')
-if (btn) {
-	btn.addEventListener('click', () => {
-		btn.classList.toggle('active')
+	// Talents slider
+	const swiperTalents = new Swiper('#talents-slider', {
+		// If we need pagination
+		pagination: {
+			el: '.swiper-pagination',
+		},
+		loop: true,
+		inverse: true,
+		spaceBetween: 20,
+		// Navigation arrows
+		navigation: {
+			nextEl: '.swiper-prev',
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+			},
+			768: {
+				slidesPerView: 2,
+			},
+			992: {
+				slidesPerView: 2.5,
+			},
+			1200: {
+				slidesPerView: 2.8,
+			},
+		},
 	})
 }
+// ======================================= [END] Home Page Scripts =======================================
 
+// ===================================== [START] Price Page Scripts =====================================
 // Price Page
 function toggleRadioInputs() {
 	const inputs = document.querySelectorAll('.radio-input')
@@ -245,7 +255,17 @@ function toggleTeamSizeNumber() {
 	})
 }
 
-if (document.querySelectorAll('.radio-input')) {
+// Inits
+if (document.getElementById('price-page')) {
 	toggleRadioInputs()
 	toggleTeamSizeNumber()
 }
+// ====================================== [END] Price Page Scripts ======================================
+
+// ===================================== [START] Global Site Scripts =====================================
+
+// ====================================== [END] Global Site Scripts ======================================
+
+// ===================================== [START] Global Site Scripts =====================================
+
+// ====================================== [END] Global Site Scripts ======================================

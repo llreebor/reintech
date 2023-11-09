@@ -18,11 +18,11 @@
 		/>
 	</head>
 
-	<body class="relative h-full">
+	<body id="price-page" class="relative h-full">
 		<div class="wrapper flex min-h-full flex-col">
 			<div id="overlay" class="overlay duration-300"></div>
 			<!-- Header -->
-			<header>
+			<header class="z-30">
 				<div class="container">
 					<div
 						class="flex items-center justify-between py-10 sm:justify-center sm:py-5"
@@ -598,6 +598,30 @@
 				</section>
 			</main>
 
+			<!-- Cookie -->
+			<div
+				id="cookie"
+				class="fixed bottom-0 left-0 right-0 z-20 hidden animate-fadeIn bg-white shadow after:absolute after:-top-[23px] after:left-0 after:h-6 after:w-full after:bg-[linear-gradient(180deg,#193E63_0%,rgba(25,62,99,0.00)_100%)] after:opacity-[0.02]"
+			>
+				<div class="container">
+					<div
+						class="flex items-center justify-between gap-[50px] py-8 md:py-6 sm:flex-col sm:items-start sm:justify-start sm:gap-5"
+					>
+						<p class="text-base font-medium leading-[1.4] md:text-sm">
+							This website uses cookies to improve your experience and collect
+							and analyze information about the users. By continuing to browse
+							this website or by clicking “Ok” you agree with our use of
+							cookies. If you would like to know more and manage your cookies,
+							you should check our
+							<a class="underline" href="#">Cookie Policy</a>
+							and
+							<a class="underline" href="#">Privacy Policy</a>
+							.
+						</p>
+						<button id="close-cookie" class="btn px-10 py-[14px]">OK</button>
+					</div>
+				</div>
+			</div>
 			<!-- Footer -->
 			<footer class="py-[60px] sm:py-[50px]">
 				<div class="container">
