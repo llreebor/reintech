@@ -1092,6 +1092,10 @@ h3 {
   margin-top: -111px;
 }
 
+.-mt-\[30px\] {
+  margin-top: -30px;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1234,10 +1238,6 @@ h3 {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.-mt-\[30px\] {
-  margin-top: -30px;
 }
 
 .block {
@@ -1591,6 +1591,14 @@ h3 {
 
 .resize {
   resize: both;
+}
+
+.list-decimal {
+  list-style-type: decimal;
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .appearance-none {
@@ -2106,6 +2114,11 @@ h3 {
   padding-bottom: 70px;
 }
 
+.py-\[120px\] {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -2172,6 +2185,14 @@ h3 {
 
 .pt-\[60px\] {
   padding-top: 60px;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
 }
 
 .text-center {
