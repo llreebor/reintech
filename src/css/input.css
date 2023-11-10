@@ -51,9 +51,14 @@
 		@apply font-bold;
 	}
 
-	/* Input */
+	/* Input  */
 	.input {
 		@apply border-b border-transparent border-b-black-shadow bg-transparent p-5 text-lg font-medium placeholder:text-main-shadow  focus:border-transparent focus:border-b-main-blue focus:ring-0 md:max-w-[400px];
+	}
+
+	/* Input solid */
+	.input-solid {
+		@apply rounded border-black-shadow bg-transparent py-[3px] px-4 text-lg font-medium  placeholder:text-main-shadow  focus:border-main-blue focus:ring-0 md:w-full;
 	}
 }
 
