@@ -1062,6 +1062,10 @@ h3 {
   top: 1.25rem;
 }
 
+.top-\[-107px\] {
+  top: -107px;
+}
+
 .top-\[-28px\] {
   top: -28px;
 }
@@ -1124,9 +1128,9 @@ h3 {
   margin-bottom: 0px;
 }
 
-.my-\[60px\] {
-  margin-top: 60px;
-  margin-bottom: 60px;
+.my-\[180px\] {
+  margin-top: 180px;
+  margin-bottom: 180px;
 }
 
 .-mt-4 {
@@ -1135,6 +1139,10 @@ h3 {
 
 .-mt-\[111px\] {
   margin-top: -111px;
+}
+
+.-mt-\[226px\] {
+  margin-top: -226px;
 }
 
 .-mt-\[30px\] {
@@ -1167,6 +1175,10 @@ h3 {
 
 .ml-3 {
   margin-left: 0.75rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
 }
 
 .ml-\[146px\] {
@@ -1233,6 +1245,10 @@ h3 {
   margin-top: -130px;
 }
 
+.mt-\[-60px\] {
+  margin-top: -60px;
+}
+
 .mt-\[100px\] {
   margin-top: 100px;
 }
@@ -1281,12 +1297,12 @@ h3 {
   margin-top: 70px;
 }
 
-.mt-auto {
-  margin-top: auto;
+.mt-\[72px\] {
+  margin-top: 72px;
 }
 
-.mt-\[-60px\] {
-  margin-top: -60px;
+.mt-auto {
+  margin-top: auto;
 }
 
 .block {
@@ -1385,6 +1401,10 @@ h3 {
   height: 70px;
 }
 
+.h-\[90px\] {
+  height: 90px;
+}
+
 .h-auto {
   height: auto;
 }
@@ -1455,6 +1475,10 @@ h3 {
 
 .w-\[90\%\] {
   width: 90%;
+}
+
+.w-\[90px\] {
+  width: 90px;
 }
 
 .w-full {
@@ -1556,6 +1580,11 @@ h3 {
 
 .max-w-\[960px\] {
   max-width: 960px;
+}
+
+.max-w-fit {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .max-w-full {
@@ -1758,6 +1787,10 @@ h3 {
 
 .gap-\[30px\] {
   gap: 30px;
+}
+
+.gap-\[42px\] {
+  gap: 42px;
 }
 
 .gap-\[45px\] {
@@ -2079,16 +2112,16 @@ h3 {
   padding: 100px;
 }
 
+.p-\[30px\] {
+  padding: 30px;
+}
+
 .p-\[55px\] {
   padding: 55px;
 }
 
 .p-\[60px\] {
   padding: 60px;
-}
-
-.p-0 {
-  padding: 0px;
 }
 
 .px-0 {
@@ -2387,6 +2420,10 @@ h3 {
   color: rgb(0 6 85 / var(--tw-text-opacity));
 }
 
+.text-main-black\/50 {
+  color: rgb(0 6 85 / 0.5);
+}
+
 .text-main-blue {
   --tw-text-opacity: 1;
   color: rgb(47 110 246 / var(--tw-text-opacity));
@@ -2404,10 +2441,6 @@ h3 {
 
 .text-white\/80 {
   color: rgb(255 255 255 / 0.8);
-}
-
-.text-main-black\/50 {
-  color: rgb(0 6 85 / 0.5);
 }
 
 .underline {
@@ -2497,6 +2530,12 @@ h3 {
   height: 410px;
   width: 430px;
   padding: 2.5rem;
+}
+
+@media (max-width: 991.99px) {
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 60px;
+  }
 }
 
 /* Swiper */
@@ -2738,13 +2777,13 @@ h3 {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.hover\:text-main-black\/100:hover {
+  color: rgb(0 6 85 / 1);
+}
+
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:text-main-black\/100:hover {
-  color: rgb(0 6 85 / 1);
 }
 
 .hover\:underline:hover {
@@ -3185,12 +3224,21 @@ h3 {
     margin-right: auto;
   }
 
+  .md\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .md\:-mt-\[111px\] {
     margin-top: -111px;
   }
 
   .md\:-mt-\[160px\] {
     margin-top: -160px;
+  }
+
+  .md\:-mt-\[210px\] {
+    margin-top: -210px;
   }
 
   .md\:ml-auto {
@@ -3207,6 +3255,10 @@ h3 {
 
   .md\:mt-20 {
     margin-top: 5rem;
+  }
+
+  .md\:mt-\[-115px\] {
+    margin-top: -115px;
   }
 
   .md\:mt-\[10px\] {
@@ -3319,6 +3371,10 @@ h3 {
     background-color: rgb(245 248 251 / var(--tw-bg-opacity));
   }
 
+  .md\:bg-main-black\/60 {
+    background-color: rgb(0 6 85 / 0.6);
+  }
+
   .md\:bg-transparent {
     background-color: transparent;
   }
@@ -3421,6 +3477,10 @@ h3 {
     margin-top: -0px;
   }
 
+  .sm\:-mt-5 {
+    margin-top: -1.25rem;
+  }
+
   .sm\:mb-0 {
     margin-bottom: 0px;
   }
@@ -3481,10 +3541,6 @@ h3 {
     margin-top: 70px;
   }
 
-  .sm\:-mt-5 {
-    margin-top: -1.25rem;
-  }
-
   .sm\:block {
     display: block;
   }
@@ -3509,6 +3565,10 @@ h3 {
     height: 145px;
   }
 
+  .sm\:h-\[185px\] {
+    height: 185px;
+  }
+
   .sm\:h-\[350px\] {
     height: 350px;
   }
@@ -3529,13 +3589,13 @@ h3 {
     max-width: 320px;
   }
 
-  .sm\:max-w-full {
-    max-width: 100%;
-  }
-
   .sm\:max-w-fit {
     max-width: -moz-fit-content;
     max-width: fit-content;
+  }
+
+  .sm\:max-w-full {
+    max-width: 100%;
   }
 
   .sm\:shrink-0 {
@@ -3599,12 +3659,12 @@ h3 {
     gap: 10px;
   }
 
-  .sm\:gap-\[50px\] {
-    gap: 50px;
-  }
-
   .sm\:gap-\[30px\] {
     gap: 30px;
+  }
+
+  .sm\:gap-\[50px\] {
+    gap: 50px;
   }
 
   .sm\:gap-x-\[55px\] {
@@ -3665,6 +3725,10 @@ h3 {
     padding-right: 1.5rem;
   }
 
+  .sm\:text-left {
+    text-align: left;
+  }
+
   .sm\:text-center {
     text-align: center;
   }
@@ -3705,6 +3769,10 @@ h3 {
 
   .xs\:ml-0 {
     margin-left: 0px;
+  }
+
+  .xs\:h-\[240px\] {
+    height: 240px;
   }
 
   .xs\:max-h-\[100px\] {

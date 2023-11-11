@@ -219,6 +219,26 @@ if (
 			},
 		},
 	})
+
+	// Profiles slider
+	const profilesTestimonials = new Swiper('#profiles-slider', {
+		// If we need pagination
+		pagination: {
+			el: '.swiper-pagination',
+		},
+		spaceBetween: 60,
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+			},
+			600: {
+				slidesPerView: 1.4,
+			},
+			992: {
+				slidesPerView: 2.2,
+			},
+		},
+	})
 }
 // ================================= [END] Home & Developer Page Scripts =================================
 
