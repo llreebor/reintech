@@ -164,11 +164,41 @@ const slideToggle = (target, duration = 300) => {
 	}
 }
 
+// Hero Animations
+function showMoreDetials(className) {
+	const btn = document.getElementById(className)
+	if (btn) {
+		btn.addEventListener('click', () => {
+			// Remove "active" class from all elements with class "hero-box"
+			document.querySelectorAll('.hero-box').forEach((ele) => {
+				if (ele.id !== className) {
+					ele.classList.remove('active')
+				}
+			})
+			btn.classList.toggle('active')
+		})
+	}
+}
 // Inits
 if (
 	document.getElementById('home-page') ||
 	document.getElementById('developer-page')
 ) {
+	// Hero Animations
+	showMoreDetials('hero-box-1')
+	showMoreDetials('hero-box-2')
+	showMoreDetials('hero-box-3')
+	showMoreDetials('hero-box-4')
+	showMoreDetials('tab-hero-box-1')
+	showMoreDetials('tab-hero-box-2')
+	showMoreDetials('tab-hero-box-3')
+	showMoreDetials('tab-hero-box-4')
+	showMoreDetials('mob-hero-box-1')
+	showMoreDetials('mob-hero-box-2')
+	showMoreDetials('mob-hero-box-3')
+	showMoreDetials('mob-hero-box-4')
+
+	// Accordion
 	accordion()
 
 	// Testimonials slider

@@ -62,10 +62,72 @@
 	}
 }
 
-@layer utilities {
-	.hero-box.active {
-		@apply h-[410px] w-[430px]  p-10;
+/* ======================================  Other Styles ====================================== */
+.hero-box {
+	width: 322px;
+	margin-bottom: 10px;
+	transition: all 1s ease;
+}
+.ml-left-boxes .hero-box {
+	margin-left: auto;
+}
+.hero-box.active {
+	@apply mt-[.8rem] w-[430px] p-10;
+}
+#hero-box-1.hero-box.active,
+#hero-box-4.hero-box.active,
+#tab-hero-box-1.hero-box.active,
+#tab-hero-box-4.hero-box.active,
+#mob-hero-box-1.hero-box.active,
+#mob-hero-box-4.hero-box.active {
+	@apply h-[520px];
+}
+#hero-box-2.hero-box.active,
+#hero-box-3.hero-box.active,
+#tab-hero-box-2.hero-box.active,
+#tab-hero-box-3.hero-box.active,
+#mob-hero-box-2.hero-box.active,
+#mob-hero-box-3.hero-box.active {
+	@apply h-[420px];
+}
+@media screen and (min-width: 1025px) {
+	.desk-view {
+		display: flex;
 	}
+}
+@media screen and (min-width: 576px) and (max-width: 1024px) {
+	.tab-view {
+		display: block;
+	}
+	.tab-view .hero-box {
+		width: 46%;
+		margin: 5px;
+		margin-top: 0;
+	}
+	.tab-view .hero-box.active {
+		width: 100%;
+	}
+}
+@media screen and (min-width: 200px) and (max-width: 600px) {
+	#hero-box-1.hero-box.active,
+	#hero-box-4.hero-box.active,
+	#tab-hero-box-1.hero-box.active,
+	#tab-hero-box-4.hero-box.active,
+	#mob-hero-box-1.hero-box.active,
+	#mob-hero-box-4.hero-box.active {
+		@apply h-[600px];
+	}
+	.mob-view {
+		display: block;
+	}
+	.mob-view .hero-box {
+		width: 100%;
+		margin-top: 0;
+	}
+}
+a.btn.mt-11.md\:mx-auto.md\:flex.md\:justify-center.sm\:mt-\[30px\] {
+	width: fit-content;
+	margin-bottom: 50px;
 }
 
 @media (max-width: 991.99px) {
@@ -84,7 +146,6 @@
 .swiper-pagination .swiper-pagination-bullet-active {
 	background: #d3dde9;
 }
-
 .marquee {
 	--gap: 60px;
 	display: flex;
@@ -92,7 +153,6 @@
 	user-select: none;
 	gap: var(--gap);
 }
-
 .marquee__content {
 	flex-shrink: 0;
 	display: flex;
