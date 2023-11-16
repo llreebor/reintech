@@ -66,7 +66,7 @@
 .hero-box {
 	width: 322px;
 	margin-bottom: 10px;
-	transition: all 1s ease;
+	transition: all 0.5s ease;
 }
 .ml-left-boxes .hero-box {
 	margin-left: auto;
@@ -74,51 +74,77 @@
 .hero-box.active {
 	@apply mt-[.8rem] w-[430px] p-10;
 }
-#hero-box-1.hero-box.active,
-#hero-box-4.hero-box.active,
-#tab-hero-box-1.hero-box.active,
-#tab-hero-box-4.hero-box.active,
-#mob-hero-box-1.hero-box.active,
-#mob-hero-box-4.hero-box.active {
-	@apply h-[520px];
+
+/* Hero Box 1 */
+#hero-box-1.hero-box.active {
+	@apply h-[510px];
 }
-#hero-box-2.hero-box.active,
-#hero-box-3.hero-box.active,
-#tab-hero-box-2.hero-box.active,
-#tab-hero-box-3.hero-box.active,
-#mob-hero-box-2.hero-box.active,
-#mob-hero-box-3.hero-box.active {
+#tab-hero-box-1.hero-box.active {
 	@apply h-[420px];
 }
-@media screen and (min-width: 1025px) {
+#mob-hero-box-1.hero-box.active {
+	@apply h-auto;
+}
+
+/* Hero Box 2 */
+#hero-box-2.hero-box.active {
+	@apply h-[420px];
+}
+#tab-hero-box-2.hero-box.active {
+	@apply h-[420px];
+}
+#mob-hero-box-2.hero-box.active {
+	@apply h-auto;
+}
+
+/* Hero Box 3 */
+#hero-box-3.hero-box.active {
+	@apply h-[380px];
+}
+#tab-hero-box-3.hero-box.active {
+	@apply h-[380px];
+}
+#mob-hero-box-3.hero-box.active {
+	@apply h-auto;
+}
+
+/* Hero Box 4 */
+#hero-box-4.hero-box.active {
+	@apply h-[540px];
+}
+#tab-hero-box-4.hero-box.active {
+	@apply h-[540px];
+}
+#mob-hero-box-4.hero-box.active {
+	@apply h-auto;
+}
+
+@media screen and (min-width: 992px) {
 	.desk-view {
 		display: flex;
 	}
 }
-@media screen and (min-width: 576px) and (max-width: 1024px) {
+@media (max-width: 991.99px) {
 	.tab-view {
 		display: block;
 	}
 	.tab-view .hero-box {
-		width: 46%;
+		width: 47.9%;
 		margin: 5px;
 		margin-top: 0;
 	}
 	.tab-view .hero-box.active {
 		width: 100%;
+		height: auto !important;
 	}
 }
-@media screen and (min-width: 200px) and (max-width: 600px) {
-	#hero-box-1.hero-box.active,
-	#hero-box-4.hero-box.active,
-	#tab-hero-box-1.hero-box.active,
-	#tab-hero-box-4.hero-box.active,
-	#mob-hero-box-1.hero-box.active,
-	#mob-hero-box-4.hero-box.active {
-		@apply h-[600px];
+@media (max-width: 767.99px) {
+	.tab-view {
+		display: none;
 	}
 	.mob-view {
 		display: block;
+		width: 100%;
 	}
 	.mob-view .hero-box {
 		width: 100%;
@@ -130,11 +156,6 @@ a.btn.mt-11.md\:mx-auto.md\:flex.md\:justify-center.sm\:mt-\[30px\] {
 	margin-bottom: 50px;
 }
 
-@media (max-width: 991.99px) {
-	.swiper-pagination .swiper-pagination-bullet {
-		width: 60px;
-	}
-}
 /* Swiper */
 .swiper-pagination .swiper-pagination-bullet {
 	width: 80px;
@@ -146,6 +167,13 @@ a.btn.mt-11.md\:mx-auto.md\:flex.md\:justify-center.sm\:mt-\[30px\] {
 .swiper-pagination .swiper-pagination-bullet-active {
 	background: #d3dde9;
 }
+@media (max-width: 991.99px) {
+	.swiper-pagination .swiper-pagination-bullet {
+		width: 60px;
+	}
+}
+
+/* Marquee */
 .marquee {
 	--gap: 60px;
 	display: flex;
@@ -161,10 +189,10 @@ a.btn.mt-11.md\:mx-auto.md\:flex.md\:justify-center.sm\:mt-\[30px\] {
 	gap: var(--gap);
 }
 .marquee__content-left {
-	animation: 10s scrollToLeft infinite linear;
+	animation: 20s scrollToLeft infinite linear;
 }
 .marquee__content-right {
-	animation: 10s scrollToRight infinite linear reverse;
+	animation: 20s scrollToRight infinite linear reverse;
 }
 @keyframes scrollToLeft {
 	from {
