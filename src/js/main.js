@@ -54,7 +54,7 @@ function toggleCookieMsg() {
 		msg.classList.toggle('hidden')
 	}, 500)
 }
-// toggleCookieMsg()
+toggleCookieMsg()
 
 // ====================================== [END] Global Site Scripts ======================================
 
