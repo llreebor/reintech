@@ -15,7 +15,7 @@
 	}
 
 	h2 {
-		@apply text-[64px] font-bold leading-none text-main-black   sm:text-5xl;
+		@apply text-[64px] font-bold leading-none text-main-black sm:text-5xl;
 	}
 
 	h3 {
@@ -25,11 +25,11 @@
 
 @layer components {
 	/* Containers  */
-	.container-big {
-		@apply mx-auto max-w-[1360px] px-5;
+	.container-offset {
+		@apply mx-auto max-w-[1360px] px-5 xl:!max-w-[1840px];
 	}
 	.container-xl {
-		@apply mx-auto  w-full xl:!max-w-[1840px];
+		@apply mx-auto w-full  px-5 xl:!max-w-[1720px];
 	}
 	/* Hero Box */
 	.hero-box {
@@ -218,5 +218,11 @@ a.btn.mt-11.md\:mx-auto.md\:flex.md\:justify-center.sm\:mt-\[30px\] {
 	}
 	to {
 		transform: translateX(calc(-100% - var(--gap)));
+	}
+}
+
+@media screen and (min-width: 1349.99px) and (max-width: 1839.99px) {
+	.container-offset {
+		max-width: 1360px !important;
 	}
 }

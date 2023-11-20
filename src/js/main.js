@@ -216,10 +216,11 @@ if (
 				slidesPerView: 2,
 			},
 			992: {
-				slidesPerView: 3,
+				slidesPerView: 3.2,
 			},
 			1800: {
 				slidesPerView: 3.6,
+				spaceBetween: 70,
 			},
 		},
 	})
