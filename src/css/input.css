@@ -110,7 +110,7 @@
 
 /* Hero Box 4 */
 #hero-box-4.hero-box.active {
-	@apply h-[540px];
+	@apply h-[540px] xl:h-[520px];
 }
 #tab-hero-box-4.hero-box.active {
 	@apply h-[540px];

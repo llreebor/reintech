@@ -1443,10 +1443,6 @@ h3 {
   max-width: 686px;
 }
 
-.max-w-\[765px\] {
-  max-width: 765px;
-}
-
 .max-w-\[775px\] {
   max-width: 775px;
 }
@@ -2207,6 +2203,12 @@ h3 {
   height: 540px;
 }
 
+@media (min-width: 1840px) {
+  #hero-box-4.hero-box.active {
+    height: 520px;
+  }
+}
+
 #tab-hero-box-4.hero-box.active {
   height: 540px;
 }
@@ -2561,40 +2563,20 @@ a.btn.mt-11.md\:mx-auto.md\:flex.md\:justify-center.sm\:mt-\[30px\] {
     margin-top: 2rem;
   }
 
-  .xl\:mt-\[400px\] {
-    margin-top: 400px;
-  }
-
-  .xl\:mt-\[4\=00px\] {
-    margin-top: 4=00px;
-  }
-
-  .xl\:mt-\[250px\] {
-    margin-top: 250px;
-  }
-
   .xl\:mt-\[200px\] {
     margin-top: 200px;
-  }
-
-  .xl\:mt-\[100px\] {
-    margin-top: 100px;
-  }
-
-  .xl\:mt-\[240px\] {
-    margin-top: 240px;
   }
 
   .xl\:mt-\[340px\] {
     margin-top: 340px;
   }
 
-  .xl\:h-auto {
-    height: auto;
+  .xl\:mt-\[400px\] {
+    margin-top: 400px;
   }
 
-  .xl\:h-\[800px\] {
-    height: 800px;
+  .xl\:h-auto {
+    height: auto;
   }
 
   .xl\:w-full {
@@ -2680,11 +2662,6 @@ a.btn.mt-11.md\:mx-auto.md\:flex.md\:justify-center.sm\:mt-\[30px\] {
   .xl\:py-\[85px\] {
     padding-top: 85px;
     padding-bottom: 85px;
-  }
-
-  .xl\:py-\[105px\] {
-    padding-top: 105px;
-    padding-bottom: 105px;
   }
 
   .xl\:pl-\[60px\] {
