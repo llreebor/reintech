@@ -1255,6 +1255,14 @@ h3 {
   margin-top: auto;
 }
 
+.mt-\[117px\] {
+  margin-top: 117px;
+}
+
+.mt-\[107px\] {
+  margin-top: 107px;
+}
+
 .block {
   display: block;
 }
@@ -2547,6 +2555,26 @@ a.btn.mt-11.md\:mx-auto.md\:flex.md\:justify-center.sm\:mt-\[30px\] {
     top: 50%;
   }
 
+  .xl\:top-0 {
+    top: 0px;
+  }
+
+  .xl\:top-\[-74px\] {
+    top: -74px;
+  }
+
+  .xl\:top-\[-80px\] {
+    top: -80px;
+  }
+
+  .xl\:top-\[-70px\] {
+    top: -70px;
+  }
+
+  .xl\:top-\[-60px\] {
+    top: -60px;
+  }
+
   .xl\:-mt-\[100px\] {
     margin-top: -100px;
   }
@@ -2575,8 +2603,56 @@ a.btn.mt-11.md\:mx-auto.md\:flex.md\:justify-center.sm\:mt-\[30px\] {
     margin-top: 400px;
   }
 
+  .xl\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .xl\:mt-\[120px\] {
+    margin-top: 120px;
+  }
+
+  .xl\:mt-\[140px\] {
+    margin-top: 140px;
+  }
+
+  .xl\:mt-\[180px\] {
+    margin-top: 180px;
+  }
+
+  .xl\:mt-\[160px\] {
+    margin-top: 160px;
+  }
+
+  .xl\:mt-\[150px\] {
+    margin-top: 150px;
+  }
+
+  .xl\:mt-\[155px\] {
+    margin-top: 155px;
+  }
+
+  .xl\:mt-\[260px\] {
+    margin-top: 260px;
+  }
+
+  .xl\:mt-\[0px\] {
+    margin-top: 0px;
+  }
+
+  .xl\:mt-\[300px\] {
+    margin-top: 300px;
+  }
+
+  .xl\:mt-\[240px\] {
+    margin-top: 240px;
+  }
+
   .xl\:h-auto {
     height: auto;
+  }
+
+  .xl\:h-\[820px\] {
+    height: 820px;
   }
 
   .xl\:w-full {
