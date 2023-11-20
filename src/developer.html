@@ -23,7 +23,7 @@
 			<div id="overlay" class="overlay duration-300"></div>
 			<!-- Header -->
 			<header class="z-30">
-				<div class="container">
+				<div class="container-xl container">
 					<div
 						class="flex items-center justify-between py-10 sm:justify-center sm:py-5"
 					>
@@ -145,18 +145,20 @@
 			<!-- Main Content -->
 			<main class="flex-auto">
 				<!-- Section 1 (Hero) -->
-				<section class="my-0">
-					<div class="container">
+				<section id="section-hero" class="my-0">
+					<div class="container-xl container">
 						<!-- Desktop view -->
-						<div class="desk-view relative hidden">
+						<div class="desk-view relative hidden gap-5">
 							<div
-								class="mt-[10rem] max-w-[473px] md:mt-[10px] md:max-w-full sm:mt-[50px]"
+								class="mt-[10rem] max-w-[473px] xl:max-w-[556px] md:mt-[10px] md:max-w-full sm:mt-[50px]"
 							>
-								<h2 class="max-w-[378px] pl-0 md:max-w-full md:text-center">
+								<h2
+									class="max-w-[378px] pl-0 xl:max-w-[556px] xl:text-[96px] md:max-w-full md:text-center"
+								>
 									Hire Elite Go Developers
 								</h2>
 								<p
-									class="mt-9 max-w-[473px] text-2xl font-medium leading-tight md:text-center"
+									class="mt-9 max-w-[473px] text-2xl font-medium leading-tight xl:max-w-[556px] xl:text-4xl md:text-center"
 								>
 									Achieve Technical Excellence with Reintech's Remote Teams
 								</p>
@@ -178,7 +180,7 @@
 									>
 										<!-- Bg Image -->
 										<img
-											class="absolute left-[102px] top-0 z-0 group-[.active]:hidden"
+											class="absolute left-[102px] top-0 z-0 group-[.active]:hidden xl:left-[136px] xl:h-auto xl:w-full xl:max-w-[210px] xl:object-cover"
 											src="./img/hero-img-1.svg"
 											alt="img"
 										/>
@@ -198,12 +200,12 @@
 												/>
 											</svg>
 											<span
-												class="mt-3 block text-[64px] font-bold leading-none text-white group-[.active]:mt-0"
+												class="mt-3 block text-[64px] font-bold leading-none text-white group-[.active]:mt-0 xl:mt-8 xl:text-[96px]"
 											>
 												3x
 											</span>
 											<p
-												class="mt-5 text-2xl font-medium leading-none text-white group-[.active]:hidden"
+												class="mt-5 text-2xl font-medium leading-none text-white group-[.active]:hidden xl:text-[32px]"
 											>
 												Reduce your involvement's time
 											</p>
@@ -263,12 +265,12 @@
 												/>
 											</svg>
 											<span
-												class="mt-3 block text-[64px] font-bold leading-none text-white"
+												class="mt-3 block text-[64px] font-bold leading-none text-white group-[.active]:mt-0 xl:mt-8 xl:text-[96px]"
 											>
 												2x
 											</span>
 											<p
-												class="mt-5 text-2xl font-medium leading-none text-white group-[.active]:hidden"
+												class="mt-5 text-2xl font-medium leading-none text-white group-[.active]:hidden xl:text-[32px]"
 											>
 												Reduce your time-to-hire
 											</p>
@@ -302,7 +304,7 @@
 									>
 										<!-- Bg Image -->
 										<img
-											class="absolute left-[73px] top-0 z-0 group-[.active]:hidden"
+											class="absolute left-[73px] top-0 z-0 group-[.active]:hidden xl:left-[97px] xl:top-1/2 xl:h-auto xl:w-full xl:max-w-[267px] xl:-translate-y-1/2 xl:object-cover"
 											src="./img/hero-img-2.svg"
 											alt="img"
 										/>
@@ -323,12 +325,12 @@
 											</svg>
 
 											<span
-												class="mt-3 block text-[64px] font-bold leading-none"
+												class="mt-3 block text-[64px] font-bold leading-none group-[.active]:mt-0 xl:mt-8 xl:text-[96px]"
 											>
 												2x
 											</span>
 											<p
-												class="mt-5 text-2xl font-medium leading-none group-[.active]:hidden"
+												class="mt-5 text-2xl font-medium leading-none group-[.active]:hidden xl:text-[32px]"
 											>
 												Job tenure duration
 											</p>
@@ -363,7 +365,7 @@
 									>
 										<!-- Bg Image -->
 										<img
-											class="absolute left-[57px] top-3 z-0 group-[.active]:hidden"
+											class="absolute left-[57px] top-3 z-0 group-[.active]:hidden xl:h-auto xl:w-full xl:max-w-[270px] xl:object-cover"
 											src="./img/hero-img-4.svg"
 											alt="img"
 										/>
@@ -384,12 +386,12 @@
 											</svg>
 
 											<span
-												class="mt-3 block text-[64px] font-bold leading-none"
+												class="mt-3 block text-[64px] font-bold leading-none group-[.active]:mt-0 xl:mt-8 xl:text-[96px]"
 											>
 												1.5х
 											</span>
 											<p
-												class="mt-5 text-2xl font-medium leading-none group-[.active]:hidden"
+												class="mt-5 text-2xl font-medium leading-none group-[.active]:hidden xl:text-[32px]"
 											>
 												Cost savings
 											</p>
@@ -434,7 +436,7 @@
 						</div>
 
 						<!-- Tab view -->
-						<div class="tab-view relative hidden items-center">
+						<div class="tab-view relative hidden items-center gap-5">
 							<div
 								class="max-w-[473px] md:mt-[10px] md:max-w-full sm:mt-[50px]"
 							>
@@ -454,7 +456,9 @@
 								</a>
 							</div>
 
-							<div class="ml-auto flex flex-wrap items-center gap-[10px]">
+							<div
+								class="ml-auto flex w-full flex-wrap items-center gap-[10px]"
+							>
 								<!-- Right Side -->
 								<!-- Box Item 1 -->
 								<div
@@ -713,7 +717,7 @@
 						</div>
 
 						<!-- Mobile view -->
-						<div class="mob-view relative hidden items-center">
+						<div class="mob-view relative hidden items-center gap-5">
 							<div
 								class="max-w-[473px] md:mt-[10px] md:max-w-full sm:mt-[50px]"
 							>
@@ -995,7 +999,7 @@
 
 				<!-- Section 2 ( Text ) -->
 				<section>
-					<div class="container">
+					<div class="container-xl container">
 						<div class="flex max-w-[960px] flex-col gap-5">
 							<p class="text-lg font-medium leading-snug">
 								Building a high-performing tech team can be daunting, especially
@@ -1019,7 +1023,7 @@
 
 				<!-- Section 3 ( Testimonials slider ) -->
 				<section>
-					<div class="container">
+					<div class="container-xl container">
 						<!-- Slider main container -->
 						<div id="testimonials-slider" class="swiper">
 							<!-- Additional required wrapper -->
@@ -1146,10 +1150,10 @@
 
 				<!-- Section 4 ( Talents ) -->
 				<section>
-					<div class="container">
-						<h2>Talents</h2>
+					<div class="container-xl container">
+						<h2 class="xl:pl-[60px]">Talents</h2>
 					</div>
-					<div class="container-big">
+					<div class="container-big container-xl">
 						<div
 							class="mt-[60px] grid grid-cols-3 gap-[10px] sm:mt-[50px] sm:grid-cols-1"
 						>
@@ -1191,26 +1195,28 @@
 
 				<!-- Section 5 ( Stats ) -->
 				<section class="relative my-[180px] md:my-0">
-					<div class="container-big">
+					<div class="container-big container-xl">
 						<div
-							class="mt-[127px] flex max-w-[686px] flex-wrap gap-[10px] md:mx-auto md:mt-0 sm:mt-[50px] sm:max-w-full sm:flex-col"
+							class="mt-[127px] flex max-w-[686px] flex-wrap gap-[10px] xl:mt-0 xl:max-w-[886px] xl:items-center md:mx-auto md:mt-0 sm:mt-[50px] sm:max-w-full sm:flex-col"
 						>
 							<div
-								class="z-0 flex h-[245px] w-full max-w-[338px] flex-col justify-center gap-[42px] rounded-[20px] bg-[#D3DDE9] p-10 md:order-3 md:mt-[-115px] md:ml-auto sm:mt-0 sm:h-[185px] sm:max-w-full"
+								class="z-0 flex h-[245px] w-full max-w-[338px] flex-col justify-center gap-[42px] rounded-[20px] bg-[#D3DDE9] p-10 xl:max-w-[438px] md:order-3 md:mt-[-115px] md:ml-auto sm:mt-0 sm:h-[185px] sm:max-w-full"
 							>
 								<h3 class="leading-tight sm:text-2xl">
 									$0
 									<br />
 									recruitment fee
 								</h3>
-								<p class="text-xl font-medium sm:text-base">
+								<p class="text-xl font-medium xl:max-w-[213px] sm:text-base">
 									Administration fee of $450/month
 								</p>
 							</div>
 							<div
-								class="z-0 mt-[111px] flex w-full max-w-[338px] flex-col justify-center rounded-[20px] bg-main-black p-10 backdrop-blur-[50px] md:order-1 md:col-span-2 md:mt-0 md:bg-main-black/60 sm:mt-0 sm:h-[185px] sm:max-w-full xs:h-[240px]"
+								class="z-0 mt-[111px] flex w-full max-w-[338px] flex-col justify-center rounded-[20px] bg-main-black p-10 backdrop-blur-[50px] xl:max-w-[438px] xl:translate-y-[74px] md:order-1 md:col-span-2 md:mt-0 md:bg-main-black/60 sm:mt-0 sm:h-[185px] sm:max-w-full xs:h-[240px]"
 							>
-								<h3 class="leading-tight text-white sm:text-left sm:text-2xl">
+								<h3
+									class="leading-tight text-white xl:max-w-[218px] sm:text-left sm:text-2xl"
+								>
 									$5.6K - $6.6K / month
 								</h3>
 								<p class="mt-4 text-xl font-medium text-white sm:text-base">
@@ -1223,7 +1229,7 @@
 								</p>
 							</div>
 							<div
-								class="z-0 -mt-[226px] flex h-[245px] w-full max-w-[338px] flex-col justify-center gap-4 rounded-[20px] bg-main-blue p-10 md:order-2 md:mt-0 sm:-mt-0 sm:h-[185px] sm:max-w-full"
+								class="z-0 -mt-[226px] flex h-[245px] w-full max-w-[338px] flex-col justify-center gap-4 rounded-[20px] bg-main-blue p-10 xl:-mt-[100px] xl:max-w-[438px] md:order-2 md:mt-0 sm:-mt-0 sm:h-[185px] sm:max-w-full"
 							>
 								<h3 class="leading-tight text-white sm:text-2xl">10 years</h3>
 								<p class="text-xl font-medium text-white sm:text-base">
@@ -1234,14 +1240,14 @@
 					</div>
 
 					<img
-						class="absolute right-0 top-[-107px] z-[-1] rounded-tl-[20px] rounded-bl-[20px] md:static md:-mt-[210px] md:h-auto md:w-full md:max-w-full md:rounded-none sm:mt-[-75px]"
+						class="xl:right absolute right-0 top-[-107px] z-[-1] rounded-tl-[20px] rounded-bl-[20px] xl:left-[40%] xl:h-auto xl:w-full xl:max-w-[1170px] md:static md:-mt-[210px] md:h-auto md:w-full md:max-w-full md:rounded-none sm:mt-[-75px]"
 						src="./img/customers-image-2.png"
 						alt="img"
 					/>
 				</section>
 
 				<!-- Section With Small Info -->
-				<section>
+				<section class="xl:mt-[400px]">
 					<div
 						class="mx-auto mt-28 flex max-w-[566px] flex-col gap-4 md:mt-[90px] sm:mt-[60px] sm:max-w-full"
 					>
@@ -1262,7 +1268,7 @@
 
 				<!-- Section 6 (Profile) -->
 				<section class="!overflow-hidden">
-					<div class="container">
+					<div class="container-xl container">
 						<h2>Profiles</h2>
 
 						<div
@@ -1794,7 +1800,7 @@
 
 				<!-- Section 7 ( Talents Slider ) -->
 				<section class="!overflow-hidden">
-					<div class="container relative">
+					<div class="container-xl container relative">
 						<h2 class="max-w-[345px]">Talent’s Experience</h2>
 
 						<div
@@ -2042,10 +2048,10 @@
 
 				<!-- Section 8 ( Approach ) -->
 				<section>
-					<div class="container">
-						<h2>Our Approach</h2>
+					<div class="container-xl container">
+						<h2 class="xl:pl-[60px]">Our Approach</h2>
 					</div>
-					<div class="container-big">
+					<div class="container-big container-xl">
 						<div
 							class="mt-[60px] grid grid-cols-3 gap-[10px] md:grid-cols-1 sm:mt-[50px]"
 						>
@@ -2105,37 +2111,37 @@
 
 				<!-- Section 9 ( Customers ) -->
 				<section class="relative">
-					<div class="container">
-						<h2 class="max-w-[765px]">
+					<div class="container-xl container">
+						<h2 class="max-w-[775px] xl:pl-[60px]">
 							What our customers are looking for from us
 						</h2>
 					</div>
 
-					<div class="container-big">
+					<div class="container-big container-xl">
 						<div
-							class="mt-[127px] flex max-w-[686px] flex-wrap gap-[10px] md:mx-auto sm:mt-[50px] sm:max-w-full sm:flex-col"
+							class="mt-[127px] flex max-w-[686px] flex-wrap gap-[10px] xl:max-w-[886px] md:mx-auto sm:mt-[50px] sm:max-w-full sm:flex-col"
 						>
 							<div
-								class="flex h-[245px] w-full max-w-[338px] items-center justify-center rounded-[20px] bg-main-black p-10 text-center md:order-1 sm:mt-0 sm:h-[145px] sm:max-w-full"
+								class="flex h-[245px] w-full max-w-[338px] items-center justify-center rounded-[20px] bg-main-black p-10 text-center xl:max-w-[438px] md:order-1 sm:mt-0 sm:h-[145px] sm:max-w-full"
 							>
 								<h3 class="leading-tight text-white sm:text-2xl">
 									Scale tech team with remote developers
 								</h3>
 							</div>
 							<div
-								class="mt-[111px] flex h-[245px] w-full max-w-[338px] items-center justify-center rounded-[20px] bg-[rgba(209,220,232,0.60)] p-10 text-center backdrop-blur-[50px] md:order-3 md:mt-0 sm:mt-0 sm:h-[145px] sm:max-w-full"
+								class="mt-[111px] flex h-[245px] w-full max-w-[338px] items-center justify-center rounded-[20px] bg-[rgba(209,220,232,0.60)] p-10 text-center backdrop-blur-[50px] xl:max-w-[438px] md:order-3 md:mt-0 sm:mt-0 sm:h-[145px] sm:max-w-full"
 							>
 								<h3 class="leading-tight sm:text-2xl">Reduce costs</h3>
 							</div>
 							<div
-								class="-mt-[111px] flex h-[245px] w-full max-w-[338px] items-center justify-center rounded-[20px] bg-main-blue p-10 text-center md:order-2 sm:-mt-0 sm:h-[145px] sm:max-w-full"
+								class="-mt-[111px] flex h-[245px] w-full max-w-[338px] items-center justify-center rounded-[20px] bg-main-blue p-10 text-center xl:max-w-[438px] md:order-2 sm:-mt-0 sm:h-[145px] sm:max-w-full"
 							>
 								<h3 class="leading-tight text-white sm:text-2xl">
 									Quick fill a specific role
 								</h3>
 							</div>
 							<div
-								class="flex h-[245px] max-w-[338px] items-center justify-center rounded-[20px] bg-[rgba(246,249,252,0.60)] p-10 text-center backdrop-blur-[50px] md:order-4 md:-mt-[111px] sm:mt-0 sm:h-[145px] sm:max-w-full"
+								class="flex h-[245px] max-w-[338px] items-center justify-center rounded-[20px] bg-[rgba(246,249,252,0.60)] p-10 text-center backdrop-blur-[50px] xl:max-w-[438px] md:order-4 md:-mt-[111px] sm:mt-0 sm:h-[145px] sm:max-w-full"
 							>
 								<h3 class="leading-tight sm:text-2xl">
 									Manage their contractors payroll
@@ -2153,16 +2159,16 @@
 
 				<!-- Section 10 ( What we do ) -->
 				<section>
-					<div class="container">
-						<h2>Wat we do?</h2>
+					<div class="container-xl container">
+						<h2 class="xl:pl-[60px]">Wat we do?</h2>
 					</div>
 
-					<div class="container-big">
+					<div class="container-big container-xl">
 						<div
 							class="mt-[60px] flex flex-wrap gap-[10px] lg:grid lg:grid-cols-2 md:grid-cols-1"
 						>
 							<div
-								class="flex max-w-[582px] items-center gap-10 rounded-[20px] bg-main-blue p-[60px] lg:max-w-full sm:flex-col sm:justify-center sm:px-10"
+								class="flex max-w-[582px] items-center gap-10 rounded-[20px] bg-main-blue p-[60px] xl:w-full xl:max-w-[682px] xl:py-[85px] xl:px-[60px] lg:max-w-full sm:flex-col sm:justify-center sm:px-10"
 							>
 								<div><img src="./img/what-we-do-1.svg" alt="img" /></div>
 								<div class="flex max-w-[250px] flex-col gap-6">
@@ -2176,7 +2182,7 @@
 							</div>
 
 							<div
-								class="flex max-w-[582px] items-center gap-10 rounded-[20px] bg-main-black p-[60px] lg:max-w-full sm:flex-col sm:justify-center sm:px-10"
+								class="flex max-w-[582px] items-center gap-10 rounded-[20px] bg-main-black p-[60px] xl:w-full xl:max-w-[682px] xl:py-[85px] xl:px-[60px] lg:max-w-full sm:flex-col sm:justify-center sm:px-10"
 							>
 								<div><img src="./img/what-we-do-2.svg" alt="img" /></div>
 								<div class="flex max-w-[250px] flex-col gap-6">
@@ -2192,7 +2198,7 @@
 							</div>
 
 							<div
-								class="ml-[146px] flex max-w-[582px] items-center gap-10 rounded-[20px] bg-[#D3DDE9] p-[60px] lg:ml-0 lg:max-w-full sm:flex-col sm:justify-center sm:px-10"
+								class="ml-[146px] flex max-w-[582px] items-center gap-10 rounded-[20px] bg-[#D3DDE9] p-[60px] xl:ml-auto xl:w-full xl:max-w-[682px] xl:py-[85px] xl:px-[60px] lg:ml-0 lg:max-w-full sm:flex-col sm:justify-center sm:px-10"
 							>
 								<div><img src="./img/what-we-do-3.svg" alt="img" /></div>
 								<div class="flex max-w-[250px] flex-col gap-6">
@@ -2204,7 +2210,7 @@
 							</div>
 
 							<div
-								class="flex max-w-[582px] items-center gap-10 rounded-[20px] bg-blue-shadow p-[60px] lg:max-w-full sm:flex-col sm:justify-center sm:px-10"
+								class="flex max-w-[582px] items-center gap-10 rounded-[20px] bg-blue-shadow p-[60px] xl:w-full xl:max-w-[682px] xl:py-[85px] xl:px-[60px] lg:max-w-full sm:flex-col sm:justify-center sm:px-10"
 							>
 								<div><img src="./img/what-we-do-4.svg" alt="img" /></div>
 								<div class="flex max-w-[250px] flex-col gap-6">
@@ -2220,7 +2226,7 @@
 
 				<!-- Section 11 ( About ) -->
 				<section>
-					<div class="container">
+					<div class="container-xl container">
 						<div class="flex max-w-[960px] flex-col gap-10">
 							<h3>
 								<p>Stand Out with Golang:</p>
@@ -2490,7 +2496,7 @@
 				<section
 					class="bg-[url('../img/partners.jpg')] bg-cover bg-center bg-no-repeat py-20 md:py-[60px] sm:py-[50px]"
 				>
-					<div class="container">
+					<div class="container-xl container">
 						<h2 class="max-w-[816px] text-white">
 							100+ developers placed for over 20 customers
 						</h2>
@@ -2534,7 +2540,7 @@
 
 				<!-- Section 13 ( FAQ )  -->
 				<section>
-					<div class="container">
+					<div class="container-xl container">
 						<h2>FAQ</h2>
 
 						<!-- [START] HTML Accordion -->
@@ -2683,7 +2689,7 @@
 
 				<!-- Section 14 ( Get In Touch ) -->
 				<section class="bg-blue-shadow py-[120px] md:py-[70px] sm:py-[50px]">
-					<div class="container">
+					<div class="container-xl container">
 						<h2>Let's get to know each other</h2>
 
 						<div
@@ -2691,7 +2697,7 @@
 						>
 							<!-- Left Sife -->
 							<div
-								class="flex w-full max-w-[560px] flex-col gap-[30px] md:max-w-full"
+								class="flex w-full max-w-[560px] flex-col gap-[30px] xl:max-w-[800px] md:max-w-full"
 							>
 								<div class="flex items-center gap-[30px] sm:gap-5">
 									<img
@@ -2733,7 +2739,7 @@
 							</div>
 
 							<!-- Right Side -->
-							<div class="w-full max-w-[480px] md:max-w-full">
+							<div class="w-full max-w-[480px] xl:max-w-[680px] md:max-w-full">
 								<h3>Get in Touch</h3>
 								<form action="#" class="mt-[30px] flex flex-col gap-5 sm:mt-5">
 									<label class="flex flex-col gap-[10px]" for="name">
@@ -2785,10 +2791,10 @@
 
 				<!-- Section 15 ( Popular Searches ) -->
 				<section class="m-0 mt-[-60px] sm:-mt-5">
-					<div class="container">
+					<div class="container-xl container">
 						<h3>Popular searches</h3>
 						<div
-							class="mt-10 grid grid-cols-3 gap-[70px] md:grid-cols-2 md:gap-5 sm:grid-cols-1"
+							class="mt-10 grid grid-cols-3 gap-[70px] xl:grid-cols-4 md:grid-cols-2 md:gap-5 sm:grid-cols-1"
 						>
 							<ul class="flex flex-col gap-[18px]">
 								<li>
@@ -2938,6 +2944,32 @@
 									</a>
 								</li>
 							</ul>
+							<ul class="flex flex-col gap-[18px]">
+								<li>
+									<a
+										class="leading-none text-main-black/50 transition-colors hover:text-main-black/100"
+										href="#"
+									>
+										Hire node.js developers
+									</a>
+								</li>
+								<li>
+									<a
+										class="leading-none text-main-black/50 transition-colors hover:text-main-black/100"
+										href="#"
+									>
+										Hire ios developers
+									</a>
+								</li>
+								<li>
+									<a
+										class="leading-none text-main-black/50 transition-colors hover:text-main-black/100"
+										href="#"
+									>
+										Hire angular developers
+									</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</section>
@@ -2948,7 +2980,7 @@
 				id="cookie"
 				class="fixed bottom-0 left-0 right-0 z-20 hidden animate-fadeIn bg-white shadow after:absolute after:-top-[23px] after:left-0 after:h-6 after:w-full after:bg-[linear-gradient(180deg,#193E63_0%,rgba(25,62,99,0.00)_100%)] after:opacity-[0.02]"
 			>
-				<div class="container">
+				<div class="container-xl container">
 					<div
 						class="flex items-center justify-between gap-[50px] py-8 md:py-6 sm:flex-col sm:items-start sm:justify-start sm:gap-5"
 					>
@@ -2969,7 +3001,7 @@
 			</div>
 			<!-- Footer -->
 			<footer class="py-[60px] sm:py-[50px]">
-				<div class="container">
+				<div class="container-xl container">
 					<div
 						class="grid grid-cols-3 justify-between gap-10 sm:grid-cols-2 xs:grid-cols-1"
 					>
@@ -2981,7 +3013,7 @@
 						<!-- Footer menu -->
 						<ul
 							id="menu"
-							class="z-10 flex animate-fadeIn items-center gap-10 md:order-2 md:gap-5 sm:order-3 sm:gap-4"
+							class="z-10 flex animate-fadeIn items-center justify-center gap-10 md:order-2 md:gap-5 sm:order-3 sm:gap-4"
 						>
 							<!-- Menu Item -->
 							<li>

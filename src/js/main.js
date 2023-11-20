@@ -218,6 +218,9 @@ if (
 			992: {
 				slidesPerView: 3,
 			},
+			1800: {
+				slidesPerView: 3.6,
+			},
 		},
 	})
 
@@ -247,6 +250,9 @@ if (
 			1200: {
 				slidesPerView: 2.8,
 			},
+			1800: {
+				slidesPerView: 3.8,
+			},
 		},
 	})
 
@@ -266,6 +272,9 @@ if (
 			},
 			992: {
 				slidesPerView: 2.2,
+			},
+			1800: {
+				slidesPerView: 3.1,
 			},
 		},
 	})

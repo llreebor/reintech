@@ -4,8 +4,9 @@
 
 @layer base {
 	.container {
-		@apply max-w-[1240px];
+		@apply !max-w-[1240px];
 	}
+
 	body {
 		@apply relative font-space text-main-black;
 	}
@@ -14,7 +15,7 @@
 	}
 
 	h2 {
-		@apply text-[64px] font-bold leading-none text-main-black  sm:text-5xl;
+		@apply text-[64px] font-bold leading-none text-main-black   sm:text-5xl;
 	}
 
 	h3 {
@@ -23,13 +24,16 @@
 }
 
 @layer components {
-	/* Container Big */
+	/* Containers  */
 	.container-big {
 		@apply mx-auto max-w-[1360px] px-5;
 	}
+	.container-xl {
+		@apply mx-auto  w-full xl:!max-w-[1840px];
+	}
 	/* Hero Box */
 	.hero-box {
-		@apply relative flex  h-[240px] w-[300px] shrink-0 cursor-pointer flex-col overflow-hidden rounded-[20px] px-10 pb-10 pt-[50px] transition-all;
+		@apply relative mb-[10px] flex h-[240px]  w-[300px]  shrink-0 cursor-pointer flex-col overflow-hidden rounded-[20px] px-10 pb-10 pt-[50px] transition-all xl:h-[320px] xl:w-[400px]  xl:px-[53px] xl:pt-[66px] xl:pb-[53px];
 	}
 	/* Button */
 	.btn {
@@ -38,7 +42,7 @@
 
 	/* Section Title */
 	.section-title {
-		@apply text-3xl font-semibold leading-normal text-black md:text-2xl  sm:text-xl;
+		@apply text-3xl font-semibold leading-normal text-black  md:text-2xl sm:text-xl;
 	}
 
 	/* Overlay */
@@ -64,21 +68,16 @@
 
 /* ======================================  Other Styles ====================================== */
 /* Hero Box Styles */
-.hero-box {
-	width: 322px;
-	margin-bottom: 10px;
-	transition: all 0.5s ease;
-}
 .ml-left-boxes .hero-box {
 	margin-left: auto;
 }
 .hero-box.active {
-	@apply mt-[.8rem] w-[430px] p-10;
+	@apply mt-[.8rem] w-[430px] p-10 xl:w-[550px];
 }
 
 /* Hero Box 1 */
 #hero-box-1.hero-box.active {
-	@apply h-[510px];
+	@apply h-[510px] xl:h-[500px];
 }
 #tab-hero-box-1.hero-box.active {
 	@apply h-[420px];
@@ -89,7 +88,7 @@
 
 /* Hero Box 2 */
 #hero-box-2.hero-box.active {
-	@apply h-[420px];
+	@apply h-[420px] xl:h-[430px];
 }
 #tab-hero-box-2.hero-box.active {
 	@apply h-[420px];
@@ -100,7 +99,7 @@
 
 /* Hero Box 3 */
 #hero-box-3.hero-box.active {
-	@apply h-[380px];
+	@apply h-[380px] xl:h-[360px];
 }
 #tab-hero-box-3.hero-box.active {
 	@apply h-[380px];
