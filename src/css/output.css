@@ -1107,11 +1107,6 @@ h3 {
   margin-bottom: 180px;
 }
 
-.my-\[280px\] {
-  margin-top: 280px;
-  margin-bottom: 280px;
-}
-
 .-mt-4 {
   margin-top: -1rem;
 }
@@ -1784,11 +1779,6 @@ h3 {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\.\/img\/partners\.jpg\'\)\] {
@@ -2543,6 +2533,10 @@ a.btn.mt-11.md\:mx-auto.md\:flex.md\:justify-center.sm\:mt-\[30px\] {
     left: 136px;
   }
 
+  .xl\:left-\[40\%\] {
+    left: 40%;
+  }
+
   .xl\:left-\[97px\] {
     left: 97px;
   }
@@ -2551,144 +2545,76 @@ a.btn.mt-11.md\:mx-auto.md\:flex.md\:justify-center.sm\:mt-\[30px\] {
     top: 50%;
   }
 
-  .xl\:left-\[40\%\] {
-    left: 40%;
+  .xl\:-mt-\[100px\] {
+    margin-top: -100px;
   }
 
   .xl\:ml-auto {
     margin-left: auto;
   }
 
-  .xl\:mt-8 {
-    margin-top: 2rem;
-  }
-
-  .xl\:-mt-\[126px\] {
-    margin-top: -126px;
-  }
-
-  .xl\:-mt-\[136px\] {
-    margin-top: -136px;
-  }
-
-  .xl\:-mt-\[156px\] {
-    margin-top: -156px;
-  }
-
-  .xl\:-mt-\[186px\] {
-    margin-top: -186px;
-  }
-
-  .xl\:-mt-\[196px\] {
-    margin-top: -196px;
-  }
-
-  .xl\:-mt-\[198px\] {
-    margin-top: -198px;
-  }
-
-  .xl\:mt-\[155px\] {
-    margin-top: 155px;
-  }
-
-  .xl\:mt-\[255px\] {
-    margin-top: 255px;
-  }
-
   .xl\:mt-0 {
     margin-top: 0px;
   }
 
-  .xl\:mt-\[300px\] {
-    margin-top: 300px;
-  }
-
-  .xl\:-mt-\[240px\] {
-    margin-top: -240px;
-  }
-
-  .xl\:-mt-\[280px\] {
-    margin-top: -280px;
-  }
-
-  .xl\:mt-\[74px\] {
-    margin-top: 74px;
-  }
-
-  .xl\:mt-\[144px\] {
-    margin-top: 144px;
-  }
-
-  .xl\:mt-\[0\] {
-    margin-top: 0;
-  }
-
-  .xl\:mt-\[160px\] {
-    margin-top: 160px;
-  }
-
-  .xl\:mt-\[-74px\] {
-    margin-top: -74px;
-  }
-
-  .xl\:-mt-\[180px\] {
-    margin-top: -180px;
-  }
-
-  .xl\:-mt-\[120px\] {
-    margin-top: -120px;
-  }
-
-  .xl\:-mt-\[110px\] {
-    margin-top: -110px;
-  }
-
-  .xl\:-mt-\[100px\] {
-    margin-top: -100px;
-  }
-
-  .xl\:mt-\[200px\] {
-    margin-top: 200px;
+  .xl\:mt-8 {
+    margin-top: 2rem;
   }
 
   .xl\:mt-\[400px\] {
     margin-top: 400px;
   }
 
-  .xl\:block {
-    display: block;
+  .xl\:mt-\[4\=00px\] {
+    margin-top: 4=00px;
+  }
+
+  .xl\:mt-\[250px\] {
+    margin-top: 250px;
+  }
+
+  .xl\:mt-\[200px\] {
+    margin-top: 200px;
+  }
+
+  .xl\:mt-\[100px\] {
+    margin-top: 100px;
+  }
+
+  .xl\:mt-\[240px\] {
+    margin-top: 240px;
+  }
+
+  .xl\:mt-\[340px\] {
+    margin-top: 340px;
   }
 
   .xl\:h-auto {
     height: auto;
   }
 
-  .xl\:h-\[1000px\] {
-    height: 1000px;
-  }
-
-  .xl\:h-\[820px\] {
-    height: 820px;
-  }
-
-  .xl\:h-\[810px\] {
-    height: 810px;
-  }
-
-  .xl\:h-\[780px\] {
-    height: 780px;
-  }
-
-  .xl\:h-\[720px\] {
-    height: 720px;
+  .xl\:h-\[800px\] {
+    height: 800px;
   }
 
   .xl\:w-full {
     width: 100%;
   }
 
+  .xl\:max-w-\[1170px\] {
+    max-width: 1170px;
+  }
+
   .xl\:max-w-\[210px\] {
     max-width: 210px;
+  }
+
+  .xl\:max-w-\[213px\] {
+    max-width: 213px;
+  }
+
+  .xl\:max-w-\[218px\] {
+    max-width: 218px;
   }
 
   .xl\:max-w-\[267px\] {
@@ -2697,6 +2623,10 @@ a.btn.mt-11.md\:mx-auto.md\:flex.md\:justify-center.sm\:mt-\[30px\] {
 
   .xl\:max-w-\[270px\] {
     max-width: 270px;
+  }
+
+  .xl\:max-w-\[438px\] {
+    max-width: 438px;
   }
 
   .xl\:max-w-\[556px\] {
@@ -2715,24 +2645,8 @@ a.btn.mt-11.md\:mx-auto.md\:flex.md\:justify-center.sm\:mt-\[30px\] {
     max-width: 800px;
   }
 
-  .xl\:max-w-\[438px\] {
-    max-width: 438px;
-  }
-
   .xl\:max-w-\[886px\] {
     max-width: 886px;
-  }
-
-  .xl\:max-w-\[218px\] {
-    max-width: 218px;
-  }
-
-  .xl\:max-w-\[213px\] {
-    max-width: 213px;
-  }
-
-  .xl\:max-w-\[1170px\] {
-    max-width: 1170px;
   }
 
   .xl\:-translate-y-1\/2 {
@@ -2766,6 +2680,11 @@ a.btn.mt-11.md\:mx-auto.md\:flex.md\:justify-center.sm\:mt-\[30px\] {
   .xl\:py-\[85px\] {
     padding-top: 85px;
     padding-bottom: 85px;
+  }
+
+  .xl\:py-\[105px\] {
+    padding-top: 105px;
+    padding-bottom: 105px;
   }
 
   .xl\:pl-\[60px\] {
@@ -3416,16 +3335,8 @@ a.btn.mt-11.md\:mx-auto.md\:flex.md\:justify-center.sm\:mt-\[30px\] {
     margin-left: 0px;
   }
 
-  .xs\:mt-\[155px\] {
-    margin-top: 155px;
-  }
-
   .xs\:h-\[240px\] {
     height: 240px;
-  }
-
-  .xs\:h-auto {
-    height: auto;
   }
 
   .xs\:max-h-\[100px\] {
