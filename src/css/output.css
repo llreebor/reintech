@@ -1595,20 +1595,8 @@ h3 {
   align-items: flex-start;
 }
 
-.items-end {
-  align-items: flex-end;
-}
-
 .items-center {
   align-items: center;
-}
-
-.justify-start {
-  justify-content: flex-start;
-}
-
-.justify-end {
-  justify-content: flex-end;
 }
 
 .justify-center {
@@ -1685,14 +1673,6 @@ h3 {
 
 .gap-\[70px\] {
   gap: 70px;
-}
-
-.gap-\[0px\] {
-  gap: 0px;
-}
-
-.gap-0 {
-  gap: 0px;
 }
 
 .gap-x-\[110px\] {
