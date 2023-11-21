@@ -35,9 +35,9 @@
 	.hero-box {
 		@apply relative mb-[10px] flex h-[240px]  w-[300px]  shrink-0 cursor-pointer flex-col overflow-hidden rounded-[20px] px-10 pb-10 pt-[50px] transition-all xl:h-[320px] xl:w-[400px]  xl:px-[53px] xl:pt-[66px] xl:pb-[53px];
 	}
-	/* .right-side-blocks.active {
-		@apply w-[420px] transition-all xl:w-[500px];
-	} */
+	.right-side-blocks.active {
+		@apply w-[420px] xl:w-[500px];
+	}
 	/* Button */
 	.btn {
 		@apply inline-block max-w-fit rounded-full bg-main-blue py-5 px-[60px] text-center text-2xl font-bold leading-none text-white transition-colors hover:bg-main-black sm:max-w-full sm:justify-center xs:py-3 xs:px-10 xs:text-base;

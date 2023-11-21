@@ -817,9 +817,15 @@ h3 {
   }
 }
 
-/* .right-side-blocks.active {
-		@apply w-[420px] transition-all xl:w-[500px];
-	} */
+.right-side-blocks.active {
+  width: 420px;
+}
+
+@media (min-width: 1840px) {
+  .right-side-blocks.active {
+    width: 500px;
+  }
+}
 
 /* Button */
 
@@ -1589,8 +1595,20 @@ h3 {
   align-items: flex-start;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -1667,6 +1685,14 @@ h3 {
 
 .gap-\[70px\] {
   gap: 70px;
+}
+
+.gap-\[0px\] {
+  gap: 0px;
+}
+
+.gap-0 {
+  gap: 0px;
 }
 
 .gap-x-\[110px\] {
@@ -1797,8 +1823,8 @@ h3 {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/img\/partners\.jpg\'\)\] {
-  background-image: url('../img/partners.jpg');
+.bg-\[url\(\'\.\.\/img\/partners\.jpeg\'\)\] {
+  background-image: url('../img/partners.jpeg');
 }
 
 .bg-hero-gradient-black {
@@ -1815,10 +1841,6 @@ h3 {
 
 .bg-hero-gradient-shadow {
   background-image: linear-gradient(180deg, #D1DCE8 0%, rgba(209, 220, 232, 0.70) 100%);
-}
-
-.bg-\[url\(\'\.\.\/img\/partners\.jpeg\'\)\] {
-  background-image: url('../img/partners.jpeg');
 }
 
 .bg-cover {

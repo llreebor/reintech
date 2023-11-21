@@ -182,15 +182,15 @@ function showMoreDetials(className) {
 				}
 			})
 
-			// if (
-			// 	(btn === block1 && !block1.classList.contains('active')) ||
-			// 	(btn === block2 && !block2.classList.contains('active'))
-			// ) {
-			// 	rightSide.classList.add('active')
-			// 	console.log('da')
-			// } else {
-			// 	rightSide.classList.remove('active')
-			// }
+			if (
+				(btn === block1 && !block1.classList.contains('active')) ||
+				(btn === block2 && !block2.classList.contains('active'))
+			) {
+				rightSide.classList.add('active')
+				console.log('da')
+			} else {
+				rightSide.classList.remove('active')
+			}
 
 			btn.classList.toggle('active')
 		})
