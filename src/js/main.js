@@ -167,18 +167,36 @@ const slideToggle = (target, duration = 300) => {
 // Hero Animations
 function showMoreDetials(className) {
 	const btn = document.getElementById(className)
+
+	const rightSide = document.querySelector('.right-side-blocks')
+
+	const block1 = document.getElementById('hero-box-2')
+	const block2 = document.getElementById('hero-box-4')
+
 	if (btn) {
-		btn.addEventListener('click', () => {
+		btn.addEventListener('click', (e) => {
 			// Remove "active" class from all elements with class "hero-box"
 			document.querySelectorAll('.hero-box').forEach((ele) => {
 				if (ele.id !== className) {
 					ele.classList.remove('active')
 				}
 			})
+
+			// if (
+			// 	(btn === block1 && !block1.classList.contains('active')) ||
+			// 	(btn === block2 && !block2.classList.contains('active'))
+			// ) {
+			// 	rightSide.classList.add('active')
+			// 	console.log('da')
+			// } else {
+			// 	rightSide.classList.remove('active')
+			// }
+
 			btn.classList.toggle('active')
 		})
 	}
 }
+
 // Inits
 if (
 	document.getElementById('home-page') ||
