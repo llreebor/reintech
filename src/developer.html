@@ -1195,9 +1195,9 @@
 
 				<!-- Section 5 ( Stats ) -->
 				<section class="relative my-[180px] md:my-0">
-					<div class="container-offset container">
+					<div class="container-offset container overflow-hidden">
 						<div
-							class="mt-[127px] flex max-w-[686px] flex-wrap gap-[10px] xl:mt-0 xl:max-w-[886px] xl:items-center md:mx-auto md:mt-0 sm:mt-[50px] sm:max-w-full sm:flex-col"
+							class="flex max-w-[686px] flex-wrap gap-[10px] xl:mt-0 xl:max-w-[886px] xl:items-center md:mx-auto md:mt-0 sm:mt-[50px] sm:max-w-full sm:flex-col"
 						>
 							<div
 								class="z-0 flex h-[245px] w-full max-w-[338px] flex-col justify-center gap-[42px] rounded-[20px] bg-[#D3DDE9] p-10 xl:max-w-[438px] md:order-3 md:mt-[-115px] md:ml-auto sm:mt-0 sm:h-[185px] sm:max-w-full"
@@ -1239,15 +1239,30 @@
 						</div>
 					</div>
 
-					<img
-						class="absolute right-0 top-[-107px] z-[-1] rounded-tl-[20px] rounded-bl-[20px] xl:left-[40%] xl:top-[-60px] xl:h-[820px] xl:w-full xl:max-w-[1170px] xl:object-cover md:static md:-mt-[210px] md:h-auto md:w-full md:max-w-full md:rounded-none sm:mt-[-75px]"
+					<!-- <img
+						class="absolute right-0 top-[-107px] z-[-1] hidden rounded-tl-[20px] rounded-bl-[20px] xl:left-[40%] xl:top-[-60px] xl:w-full xl:max-w-[1170px] xl:object-cover md:static md:-mt-[210px] md:h-auto md:w-full md:max-w-full md:rounded-none sm:mt-[-75px]"
 						src="./img/customers-image-2.png"
 						alt="img"
-					/>
+					/> -->
+
+					<picture
+						class="absolute right-0 -top-[90px] z-[-1] xl:top-[-20px] xl:left-[40%] md:static"
+					>
+						<source
+							class="rounded-tl-[20px] rounded-bl-[20px] md:static md:h-auto md:w-full md:max-w-full md:rounded-none sm:mt-[-75px]"
+							srcset="./img/stats-new.png"
+							media="(min-width: 1840px)"
+						/>
+						<img
+							class="rounded-tl-[20px] rounded-bl-[20px] md:static md:mt-[-180px] md:h-auto md:w-full md:max-w-full md:rounded-none sm:mt-[-75px]"
+							src="./img/customers-image-2.png"
+							alt="img"
+						/>
+					</picture>
 				</section>
 
 				<!-- Section With Small Info -->
-				<section class="xl:mt-[260px]">
+				<section class="mt-[240px] xl:mt-[300px] md:mt-0">
 					<div
 						class="mx-auto mt-28 flex max-w-[566px] flex-col gap-4 md:mt-[90px] sm:mt-[60px] sm:max-w-full"
 					>
@@ -2151,7 +2166,7 @@
 					</div>
 
 					<picture
-						class="absolute right-0 top-[179px] z-[-1] xl:left-[40%] xl:h-[820px] xl:w-full xl:max-w-[1170px] xl:object-cover md:static"
+						class="absolute right-0 top-[179px] z-[-1] xl:left-[40%] md:static"
 					>
 						<source
 							class="rounded-tl-[20px] rounded-bl-[20px] md:static md:-mt-[160px] md:h-auto md:w-full md:max-w-full md:rounded-none sm:mt-[-75px]"
